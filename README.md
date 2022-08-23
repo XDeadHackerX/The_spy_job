@@ -26,32 +26,32 @@
 
 **1)** sudo apt update && apt -y full-upgrade
 
-2) sudo apt-get install git
+**2) sudo apt-get install git
 
-3) git clone https://github.com/XDeadHackerX/The_spy_job.git
+**3)** git clone https://github.com/XDeadHackerX/The_spy_job.git
 
-4) cd The_spy_job
+**4)** cd The_spy_job
 
-5) chmod 777 the_spy_job.sh
+**5)** chmod 777 the_spy_job.sh
 
-6) bash the_spy_job.sh
+**6)** bash the_spy_job.sh
 
-7) Marcamos la opción 0 y luego 1 para instalar las dependencias (Solo marcar la primera vez)
+**7)** Marcamos la opción 0 y luego 1 para instalar las dependencias (Solo marcar la primera vez)
 
-8) Dentro de la Opcion 0 nos encontramos con los apartados 2 y 3 los cuales podemos configurar 
+**8)** Dentro de la Opcion 0 nos encontramos con los apartados 2 y 3 los cuales podemos configurar 
 dichas APIs para sacar el maximo partido a The_spy_job
 
-9) Ya podemos disfrutar de la herramienta
+**9)** Ya podemos disfrutar de la herramienta
 
 ## 🎲 Tener en Cuenta 🎲
 
-[1] En el Apartado 0 podemos Configurar la API de Shodan y veriphone.io para sacar el mejor partido de esta Herramienta
+**[1]** En el Apartado 0 podemos Configurar la API de Shodan y veriphone.io para sacar el mejor partido de esta Herramienta
 
-[2] La Opcion ([7] Informacion de una IP Publica) con el uso de VPN la mayoria de servidores dan respuestas erroneas sobre sus puertos. Para solventar esto he puesto varios Scanners y 2 de ellos te dan los puertos correctos a pesar de la VPN.
+**[2]** La Opcion ([7] Informacion de una IP Publica) con el uso de VPN la mayoria de servidores dan respuestas erroneas sobre sus puertos. Para solventar esto he puesto varios Scanners y 2 de ellos te dan los puertos correctos a pesar de la VPN.
 
 ## 🔎 Versiones 🔎
 
-(v1.0) ---> Versión Original.
+**(v1.0)** ---> Versión Original.
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
