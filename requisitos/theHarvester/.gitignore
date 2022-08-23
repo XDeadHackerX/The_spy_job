@@ -1,0 +1,17 @@
+*.idea
+*.pyc
+*.sqlite
+*.html
+*.htm
+*.vscode
+*.xml
+*.json
+debug_results.txt
+venv
+.mypy_cache
+.pytest_cache
+build/
+dist/
+theHarvester.egg-info
+api-keys.yaml
+.DS_Store
