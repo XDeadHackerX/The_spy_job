@@ -4,7 +4,7 @@
 
 [![The-Spy-s-Job-1-0.png](https://i.postimg.cc/908fw0jm/The-Spy-s-Job-1-0.png)](https://postimg.cc/PvDHBtx9)
 
-***The spy's job** *es una Herramienta enfocada al* **OSINT** *la cual cuenta con los mejores métodos para recolectar Información sobre algo o alguien. Como todas las Herramientas creadas por* **XDeadHackerX** *una de las mejores cualidades es la automatización de todos los procesos para que solo haya que rellenar los campos y la Tool saque toda la info sin detenerse.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
+**The spy's job** *es una Herramienta enfocada al* **OSINT** *la cual cuenta con los mejores métodos para recolectar Información sobre algo o alguien. Como todas las Herramientas creadas por* **XDeadHackerX** *una de las mejores cualidades es la automatización de todos los procesos para que solo haya que rellenar los campos y la Tool saque toda la info sin detenerse.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
 
 
 
