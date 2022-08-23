@@ -48,7 +48,7 @@ read -p "[*] Elige una opcion: " opc1
 				;;
 			8 )	bash requisitos/8.sh
 				;;
-			9 )	exit | exit
+			9 )	exit
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
