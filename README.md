@@ -10,7 +10,7 @@
 
 ## 💡 Funciones 💡
 
-:ballot_box_with_check: **OSINT a Paginas Webs** --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Informacion del Servidor, Intentar Ip real de Servidor con CloudFlare, Encriptado SSL, Listar URLs Dominios, Informacion Web de WordPres, Extraer Trabajadores, Correos Electronicos y Numeros de Telefono, Listar Dominios, Ping de la Web desde varios Paises*]
+:ballot_box_with_check: **OSINT a Paginas Webs** --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Informacion del Servidor, Intentar Extraer Ip real de Servidor con CloudFlare, Encriptado SSL, Listar URLs Dominios, Informacion Web de WordPres, Extraer Trabajadores, Correos Electronicos y Numeros de Telefono, Listar Dominios, Ping de la Web desde varios Paises*]
 
 :ballot_box_with_check: **OSINT a Personas** --> [*Google Dorks, Redes Sociales, Imagenes, Posts, etc*]
 
