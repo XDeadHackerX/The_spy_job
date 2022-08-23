@@ -8,19 +8,19 @@
 
 :ballot_box_with_check: OSINT a Paginas Webs --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Informacion del Servidor, Intentar Ip real de Servidor con CloudFlare, Encriptado SSL, Listar URLs Dominios, Informacion Web de WordPres, Extraer Trabajadores, Correos Electronicos y Numeros de Telefono, Listar Dominios, Ping de la Web desde varios Paises*]
 
-:ballot_box_with_check: OSINT a Personas (Google Dorks, Redes Sociales, Imagenes, Posts, etc)
+:ballot_box_with_check: OSINT a Personas --> [*Google Dorks, Redes Sociales, Imagenes, Posts, etc*]
 
-:ballot_box_with_check: OSINT a Nicknames/Alias (Google Dorks, Buscar en 133 Redes Sociales una cuenta con ese Nick, Imagenes, Posts)
+:ballot_box_with_check: OSINT a Nicknames/Alias --> [*Google Dorks, Buscar en 133 Redes Sociales una cuenta con ese Nick, Imagenes, Posts*]
 
-:ballot_box_with_check: OSINT a Redes Sociales (Informacion de una Cuenta de Instagram/Twitter/Twitch = sin tener una cuenta)
+:ballot_box_with_check: OSINT a Redes Sociales --> [*Informacion de una Cuenta de Instagram/Twitter/Twitch = sin tener una cuenta*]
 
-:ballot_box_with_check: OSINT a Emails (Verificar la existencia del Correo, Google Dorks, Buscar en 124 Redes Sociales una cuenta con ese Email)
+:ballot_box_with_check: OSINT a Emails --> [*Verificar la existencia del Correo, Google Dorks, Buscar en 124 Redes Sociales una cuenta con ese Email*]
 
-:ballot_box_with_check: OSINT a Numeros de Telefono (Compañia, Ver si esta registrado en Instagram/Amazon/Snaptchat, Google Dorks, Intentar extraer Nombre del Dueño)
+:ballot_box_with_check: OSINT a Numeros de Telefono --> [*Compañia, Ver si esta registrado en Instagram/Amazon/Snaptchat, Google Dorks, Intentar extraer Nombre del Dueño*]
 
-:ballot_box_with_check: OSINT a IPs Publicas (Compañia, Geolocalizacion de la ciudad exacta, Buscar puertos abiertos/servicios/version, Ping de la Web desde varios Paises)
+:ballot_box_with_check: OSINT a IPs Publicas --> [*Compañia, Geolocalizacion de la ciudad exacta, Buscar puertos abiertos/servicios/version, Ping de la Web desde varios Paises*]
 
-:ballot_box_with_check: OSINT a Imagens (Metadatos, Motor de Busqueda de Google)
+:ballot_box_with_check: OSINT a Imagens --> [*Metadatos, Motor de Busqueda de Google*]
 
 ## 🛠 Instalar Herramienta 🛠
 
