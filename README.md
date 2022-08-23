@@ -24,7 +24,7 @@
 
 ## 🛠 Instalar Herramienta 🛠
 
-1) sudo apt update && apt -y full-upgrade
+**1)** sudo apt update && apt -y full-upgrade
 
 2) sudo apt-get install git
 
