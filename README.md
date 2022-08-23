@@ -26,7 +26,7 @@
 
 **1)** sudo apt update && apt -y full-upgrade
 
-**2) sudo apt-get install git
+**2)** sudo apt-get install git
 
 **3)** git clone https://github.com/XDeadHackerX/The_spy_job.git
 
