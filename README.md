@@ -4,6 +4,8 @@
 
 [![The-Spy-s-Job-1-0.png](https://i.postimg.cc/908fw0jm/The-Spy-s-Job-1-0.png)](https://postimg.cc/PvDHBtx9)
 
+**The spy's job es una Herramienta enfocada al OSINT la cual cuenta con los mejores métodos para recolectar Información sobre algo o alguien. Como todas las Herramientas creadas por XDeadHackerX una de las mejores cualidades es la automatización de todos los procesos para que solo haya que rellenar los campos y la Tool saque toda la info sin detenerse. [NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
+
 ## 💡 Funciones 💡
 
 :ballot_box_with_check: **OSINT a Paginas Webs** --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Informacion del Servidor, Intentar Ip real de Servidor con CloudFlare, Encriptado SSL, Listar URLs Dominios, Informacion Web de WordPres, Extraer Trabajadores, Correos Electronicos y Numeros de Telefono, Listar Dominios, Ping de la Web desde varios Paises*]
