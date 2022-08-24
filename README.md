@@ -10,15 +10,15 @@
 
 ## 💡 Funciones 💡
 
-:ballot_box_with_check: **OSINT a Paginas Webs** --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Informacion del Servidor, Intentar Extraer Ip real de Servidor con CloudFlare, Encriptado SSL, Listar Todas las URLs de un Dominio, Informacion Web de WordPress, Extraer Trabajadores, Correos Electronicos y Numeros de Telefono, Listar Dominios, Ping a una Web desde varios Paises*]
+:ballot_box_with_check: **OSINT a Paginas Webs** --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Informacion del Servidor, Intentar Extraer Ip real de Servidor con CloudFlare, Encriptado SSL, Listar Todas las URLs de un Dominio, Informacion Web de WordPress, Extraer Trabajadores, Correos Electronicos y Numeros de Telefono, Listar Dominios, Google Dorls, Ping a una Web desde varios Paises*]
 
 :ballot_box_with_check: **OSINT a Personas** --> [*Google Dorks, Redes Sociales, Imagenes, Posts, etc*]
 
 :ballot_box_with_check: **OSINT a Nicknames/Alias** --> [*Google Dorks, Buscar en 133 Redes Sociales una cuenta con ese Nick, Imagenes, Posts*]
 
-:ballot_box_with_check: **OSINT a Redes Sociales** --> [*Informacion de una Cuenta de Instagram/Twitter/Twitch = sin tener una cuenta*]
+:ballot_box_with_check: **OSINT a Redes Sociales** --> [*Informacion de una Cuenta de Instagram/TikTok/Twitter/Twitch/GitHub + email = sin tener una cuenta*]
 
-:ballot_box_with_check: **OSINT a Emails** --> [*Verificar la existencia de un Email, Google Dorks, Buscar en 124 Redes Sociales una cuenta con ese Email*]
+:ballot_box_with_check: **OSINT a Emails** --> [*Verificar la existencia de un Email, Buscar en 124 Redes Sociales una cuenta con ese Email, Buscar Cuenta de GitHub enlazada al Email, Google Dorks*]
 
 :ballot_box_with_check: **OSINT a Numeros de Telefono** --> [*Compañia (ISP), Ver si esta registrado en Instagram/Amazon/Snaptchat, Google Dorks, Intentar extraer el Nombre del Dueño*]
 
@@ -56,6 +56,8 @@ dichas APIs para sacar el maximo partido a The_spy_job
 ## 🔎 Versiones 🔎
 
 **(v1.0)** ---> Versión Original.
+
+**(v1.1)** ---> Nuevas Opciones en el Apartado [4] llamadas (Informacion + email de una cuenta de GitHub) y (Informacion de una cuenta de TikTok), Nueva Opcion en el Apartado [1] llamado (Google Dorks), Nuevo Opcion en el Apartado [5] Comprobar si tiene GitHub y saber su Username, Reparados los errores de los Apartados 6 y 7, solucionado el Bug al abrir un navegador en el SO Parrot.
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
