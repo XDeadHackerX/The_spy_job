@@ -11,7 +11,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -41,11 +41,13 @@ echo "[9] Extraer Correos Electronicos y Numeros de Telefono""     |"
 echo "------------------------------------------------------------"
 echo "[10] Extraer todos los Dominios""                            |"
 echo "------------------------------------------------------------"
-echo "[11] Comprobar el Estado de una Web (Ver si esta caida)""    |"
+echo "[11] Google Dorks""                                          |"
 echo "------------------------------------------------------------"
-echo "[12] Todas las opciones""                                    |"
+echo "[12] Comprobar el Estado de una Web (Ver si esta caida)""    |"
 echo "------------------------------------------------------------"
-echo "[13] Volver al Menu""                                        |"
+echo "[13] Todas las opciones""                                    |"
+echo "------------------------------------------------------------"
+echo "[14] Volver al Menu""                                        |"
 echo "============================================================"
 echo
 read -p "Elige una opcion: " opc1
@@ -116,7 +118,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 2 | open https://www.shodan.io/host/$ip
+				sudo xterm -e sleep 2 | open https://www.shodan.io/host/$ip
 				echo
 				echo
 				echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
@@ -139,7 +141,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 1 && open https://dnsdumpster.com/
+				sudo xterm -e sleep 1 && open https://dnsdumpster.com/
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
@@ -256,6 +258,22 @@ read -p "Elige una opcion: " opc1
 			11 )	echo
 				read -p "[*] Dominio/Pagina Web (Ej: web.com): " dominio
 				echo
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Buscando las veces que se a publicado en Interner el Nombre de esa Web (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo
+				echo "######################################"
+				echo "[☢] Pagina Web: www.$dominio"
+				echo "######################################"
+				echo
+				echo "Abriendo Navegador...."
+				sleep 2
+				sudo xterm -e sleep 1 && open https://www.google.com/search?q=%22$dominio%22
+				sudo xterm -e sleep 1 && open https://www.google.com/search?q=site%3A$dominio
+				echo
+				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
+				;;
+			12 )	echo
+				read -p "[*] Dominio/Pagina Web (Ej: web.com): " dominio
+				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Comprobar el Estado de una Web (Ver si esta caida) (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "######################################"
@@ -264,11 +282,11 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 1 && open https://check-host.net/check-http?host=$dominio
+				sudo xterm -e sleep 1 && open https://check-host.net/check-http?host=$dominio
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
-			12 )	clear
+			13 )	clear
 				echo            
 				echo "                     _____  _                                 _          _         _      "
 				echo "                    |_   _|| |      ◤✞ тнє ѕρу'ѕ נσв ✞◥      ( )        (_)       | |     "
@@ -279,7 +297,7 @@ read -p "Elige una opcion: " opc1
 				echo "                                               | |      __/ |   ★  ★   _/ |               "
 				echo "                                               |_|     |___/          |__/                "
 				echo "                              __________________________________________________"					
-				echo "                               ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+				echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 				echo "          -------------------------------------------------------------------------------------------"
 				echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 				echo "          -------------------------------------------------------------------------------------------" 
@@ -353,7 +371,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 2 | open https://www.shodan.io/host/$ip
+				sudo xterm -e sleep 2 | open https://www.shodan.io/host/$ip
 				echo
 				echo
 				echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
@@ -376,7 +394,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 1 && open https://dnsdumpster.com/
+				sudo xterm -e sleep 1 && open https://dnsdumpster.com/
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -486,6 +504,22 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo
 				echo
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Buscando las veces que se a publicado en Interner el Nombre de esa Web (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo
+				echo "######################################"
+				echo "[☢] Pagina Web: www.$dominio"
+				echo "######################################"
+				echo
+				echo "Abriendo Navegador...."
+				sleep 2
+				sudo xterm -e sleep 1 && open https://www.google.com/search?q=%22$dominio%22
+				sudo xterm -e sleep 1 && open https://www.google.com/search?q=site%3A$dominio
+				echo
+				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
+				echo
+				echo
+				echo
+				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Comprobar el Estado de una Web (Ver si esta caida) (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "######################################"
@@ -494,11 +528,11 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 1 && open https://check-host.net/check-http?host=$dominio
+				sudo xterm -e sleep 1 && open https://check-host.net/check-http?host=$dominio
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
-			13 )	echo
+			14 )	echo
 				sleep 1
 				bash the_spy_job.sh
 				;;

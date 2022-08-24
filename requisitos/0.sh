@@ -11,7 +11,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -47,8 +47,7 @@ read -p "[*] Elige una opcion: " opc1
 				sudo apt-get install whois -y
 				sudo apt-get install -y netdiscover
 				sudo pip install shodan
-				sudo apt-get install gnome-terminal -y
-				sudo apt-get install bettercap -y
+				sudo apt-get install xterm -y
 				sudo apt install macchanger -y
 				sudo pip3 install ignorant
 				sudo apt-get install exiftool -y
@@ -62,15 +61,19 @@ read -p "[*] Elige una opcion: " opc1
 				sudo rm -r Cloudmare
 				sudo rm -r blackbird
 				sudo rm -r DorkMe
+				sudo rm -r osgint
 
 				sudo git clone https://github.com/th3unkn0n/osi.ig.git && cd osi.ig && sudo chmod 777 requirements.txt && python3 -m pip install -r requirements.txt
 
 				cd ..
 
-				git clone https://github.com/MrH0wl/Cloudmare.git && cd Cloudmare && chmod 777 Cloudmare.py
+				sudo git clone https://github.com/MrH0wl/Cloudmare.git && cd Cloudmare && chmod 777 Cloudmare.py
 
 				cd ..
-
+				
+				sudo git clone https://github.com/hippiiee/osgint.git && cd osgint && pip3 install -r requirements.txt
+				
+				cd ..
 
 				sudo git clone https://github.com/p1ngul1n0/blackbird.git && cd blackbird && pip install -r requirements.txt
 

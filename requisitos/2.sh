@@ -11,7 +11,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -42,7 +42,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 1 && open https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22
+				sudo xterm -e sleep 1 && open https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22
 				;;
 			2 )	echo
 				read -p "[*] Escribe el Nombre del Objetivo (Ej: Guillermo): " nombre
@@ -55,7 +55,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 1 && open https://www.idcrawl.com/$nombre-$apellido1-$apellido2
+				sudo xterm -e sleep 1 && open https://www.idcrawl.com/$nombre-$apellido1-$apellido2
 				;;
 			3 )	echo
 				read -p "[*] Escribe el Nombre del Objetivo (Ej: Guillermo): " nombre
@@ -82,8 +82,8 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 1 && open https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22
-				sudo gnome-terminal -- sleep 1 && open https://www.idcrawl.com/$nombre-$apellido1-$apellido2
+				sudo xterm -e sleep 1 && open https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22
+				sudo xterm -e sleep 1 && open https://www.idcrawl.com/$nombre-$apellido1-$apellido2
 				;;
 			4 )	bash the_spy_job.sh
 				;;

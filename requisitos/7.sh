@@ -11,7 +11,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -86,7 +86,7 @@ read -p "Elige una opcion: " opc1
 							echo
 							echo "Abriendo Navegador...."
 							sleep 2
-							sudo gnome-terminal -- sleep 2 | open https://www.shodan.io/host/$ip
+							sudo xterm -e sleep 2 | open https://www.shodan.io/host/$ip
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
@@ -115,7 +115,7 @@ read -p "Elige una opcion: " opc1
 							echo
 							echo "Abriendo Navegador...."
 							sleep 2
-							sudo gnome-terminal -- sleep 2 | open https://www.shodan.io/host/$ip
+							sudo xterm -e sleep 2 | open https://www.shodan.io/host/$ip
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º y 2º den puertos erroneos /\/\/\/\/"
@@ -130,7 +130,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 1 && open https://check-host.net/check-ping?host=$ip
+				sudo xterm -e sleep 1 && open https://check-host.net/check-ping?host=$ip
 				;;
 			5 )	clear
 				echo            
@@ -143,7 +143,7 @@ read -p "Elige una opcion: " opc1
 				echo "                                               | |      __/ |   ★  ★   _/ |               "
 				echo "                                               |_|     |___/          |__/                "
 				echo "                              __________________________________________________"					
-				echo "                               ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+				echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 				echo "          -------------------------------------------------------------------------------------------"
 				echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 				echo "          -------------------------------------------------------------------------------------------" 
@@ -183,10 +183,6 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Listando puertos abiertos y sus servicios (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
-				echo "########################"
-				echo "[☢] IP: $ip"
-				echo "########################"
-				echo
 					if [ $opc2 = y ]
 						then
 							echo
@@ -209,7 +205,7 @@ read -p "Elige una opcion: " opc1
 							echo
 							echo "Abriendo Navegador...."
 							sleep 2
-							sudo gnome-terminal -- sleep 2 | open https://www.shodan.io/host/$ip
+							sudo xterm -e sleep 2 | open https://www.shodan.io/host/$ip
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
@@ -238,7 +234,7 @@ read -p "Elige una opcion: " opc1
 							echo
 							echo "Abriendo Navegador...."
 							sleep 2
-							sudo gnome-terminal -- sleep 2 | open https://www.shodan.io/host/$ip
+							sudo xterm -e sleep 2 | open https://www.shodan.io/host/$ip
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º y 2º den puertos erroneos /\/\/\/\/"
@@ -257,11 +253,11 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo gnome-terminal -- sleep 1 && open https://check-host.net/check-ping?host=$ip
+				sudo xterm -e sleep 1 && open https://check-host.net/check-ping?host=$ip
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
-			5 )	bash the_spy_job.sh
+			6 )	bash the_spy_job.sh
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
