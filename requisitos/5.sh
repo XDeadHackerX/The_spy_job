@@ -22,13 +22,13 @@ echo
 echo "=========================================================="
 echo "[1] Verificar si el Email existe""                         |"
 echo "----------------------------------------------------------"
-echo "[2] Buscar en 124 redes sociales una cuenta con ese Email""|"
+echo "[2] Buscar en 121 redes sociales una cuenta con ese Email""|"
 echo "----------------------------------------------------------"
 echo "[3] Comprobar si tiene GitHub y saber su Username""        |"
 echo "----------------------------------------------------------"
 echo "[4] Usar Google Dorks (Ver donde se a publicado el Email)""|"
 echo "----------------------------------------------------------"
-echo "[5] Todo (Verificar Email, 124 redes, Google Dorks)""      |"
+echo "[5] Todo (Verificar Email, 121 redes, Google Dorks)""      |"
 echo "----------------------------------------------------------"
 echo "[6] Volver al Menu""                                       |"
 echo "=========================================================="
@@ -92,7 +92,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo
 				echo
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Buscar en 124 redes sociales una cuenta con ese Email (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Buscar en 121 redes sociales una cuenta con ese Email (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "######################################"
 				echo "[☢] Email: $email"

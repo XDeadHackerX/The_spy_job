@@ -30,7 +30,12 @@ echo
 read -p "[*] Elige una opcion: " opc1
 	case $opc1 in
 			1 )	echo
-				sudo chown root: /home/kali/.Xauthority
+				echo "Usuarios del Sistema: " 
+				echo "_____________________"
+				users
+				echo
+				read -p "Escribe de los usuarios que aparecen aqui arriba el que estes utilizando: " user
+				sudo chown root: /home/$user/.Xauthority
 				cd requisitos
 
 				sudo apt-get install curl -y
@@ -41,7 +46,6 @@ read -p "[*] Elige una opcion: " opc1
 				sudo apt install python3-pip -y
 				sudo apt install python3-pip3 -y
 				sudo python -m pip3 install --upgrade pip
-				sudo pip3 install holehe
 				sudo apt-get install nmap -y
 				sudo apt-get install whatweb -y
 				sudo apt-get install whois -y
@@ -62,6 +66,7 @@ read -p "[*] Elige una opcion: " opc1
 				sudo rm -r blackbird
 				sudo rm -r DorkMe
 				sudo rm -r osgint
+				sudo rm -r holehe
 
 				sudo git clone https://github.com/th3unkn0n/osi.ig.git && cd osi.ig && sudo chmod 777 requirements.txt && python3 -m pip install -r requirements.txt
 
@@ -77,6 +82,10 @@ read -p "[*] Elige una opcion: " opc1
 
 				sudo git clone https://github.com/p1ngul1n0/blackbird.git && cd blackbird && pip install -r requirements.txt
 
+				cd ..
+				
+				sudo git clone https://github.com/megadose/holehe.git && cd holehe && python3 setup.py install
+				
 				cd ..
 
 				sudo git clone https://github.com/blueudp/DorkMe.git && cd DorkMe && pip install -r requirements.txt
