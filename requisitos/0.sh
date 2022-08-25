@@ -36,6 +36,15 @@ read -p "[*] Elige una opcion: " opc1
 				echo
 				read -p "Escribe de los usuarios que aparecen aqui arriba el que estes utilizando: " user
 				sudo chown root: /home/$user/.Xauthority
+				
+				if ! [ -d requisitos/resultados ]
+					then
+						mkdir requisitos/resultados
+					else
+						echo
+						echo "Carpeta creada"
+				fi
+				
 				cd requisitos
 
 				sudo apt-get install curl -y
