@@ -18,7 +18,7 @@
 
 :ballot_box_with_check: **OSINT a Redes Sociales** --> [*Informacion de una Cuenta de Instagram/TikTok/Twitter/Twitch/GitHub + email = sin tener una cuenta*]
 
-:ballot_box_with_check: **OSINT a Emails** --> [*Verificar la existencia de un Email, Buscar en 124 Redes Sociales una cuenta con ese Email, Buscar Cuenta de GitHub enlazada al Email, Google Dorks*]
+:ballot_box_with_check: **OSINT a Emails** --> [*Verificar la existencia de un Email, Buscar en 121 Redes Sociales una cuenta con ese Email, Buscar Cuenta de GitHub enlazada al Email, Google Dorks*]
 
 :ballot_box_with_check: **OSINT a Numeros de Telefono** --> [*Compañia (ISP), Ver si esta registrado en Instagram/Amazon/Snaptchat, Google Dorks, Intentar extraer el Nombre del Dueño*]
 
