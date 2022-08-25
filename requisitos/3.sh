@@ -24,7 +24,7 @@ echo "[1] Usar Google Dorks (Ver donde se a publicado ese Nick)""|"
 echo "----------------------------------------------------------"
 echo "[2] Usar Buscador especifico""                             |"
 echo "----------------------------------------------------------"
-echo "[3] Buscar en 133 redes sociales una cuenta con ese Nick"" |"
+echo "[3] Buscar en 174 redes sociales una cuenta con ese Nick"" |"
 echo "----------------------------------------------------------"
 echo "[4] Todo (Redes Sociales, Webs, Imagenes, Posts, etc)""    |"
 echo "----------------------------------------------------------"
@@ -66,7 +66,7 @@ read -p "Elige una opcion: " opc1
 				cd requisitos/blackbird
 				echo "==========================="
 				echo "  Buscando cuenta $nick"
-				echo "   en 133 Redes Sociales"
+				echo "   en 174 Redes Sociales"
 				echo "==========================="
 				echo "------->""                  |"
 				sleep 1
