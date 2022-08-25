@@ -14,7 +14,7 @@
 
 :ballot_box_with_check: **OSINT a Personas** --> [*Google Dorks, Redes Sociales, Imagenes, Posts, etc*]
 
-:ballot_box_with_check: **OSINT a Nicknames/Alias** --> [*Google Dorks, Buscar en 133 Redes Sociales una cuenta con ese Nick, Imagenes, Posts*]
+:ballot_box_with_check: **OSINT a Nicknames/Alias** --> [*Google Dorks, Buscar en 174 Redes Sociales una cuenta con ese Nick, Imagenes, Posts*]
 
 :ballot_box_with_check: **OSINT a Redes Sociales** --> [*Informacion de una Cuenta de Instagram/TikTok/Twitter/Twitch/GitHub + email = sin tener una cuenta*]
 
