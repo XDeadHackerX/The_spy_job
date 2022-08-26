@@ -16,7 +16,7 @@
 
 :ballot_box_with_check: **OSINT a Nicknames/Alias** --> [*Google Dorks, Buscar en 174 Redes Sociales una cuenta con ese Nick, Imagenes, Posts*]
 
-:ballot_box_with_check: **OSINT a Redes Sociales** --> [*Informacion de una Cuenta de Instagram/TikTok/Twitter/Twitch/GitHub + email = sin tener una cuenta*]
+:ballot_box_with_check: **OSINT a Redes Sociales** --> [*Informacion de una Cuenta de Instagram/TikTok/Twitter/Twitch/(GitHub + email) = sin tener una cuenta*]
 
 :ballot_box_with_check: **OSINT a Emails** --> [*Verificar la existencia de un Email, Buscar en 121 Redes Sociales una cuenta con ese Email, Buscar Cuenta de GitHub enlazada al Email, Google Dorks*]
 
@@ -57,7 +57,7 @@ dichas APIs para sacar el maximo partido a The_spy_job
 
 **(v1.0)** ---> Versión Original.
 
-**(v1.1)** ---> Nuevas Opciones en el Apartado [4] llamadas (Informacion + email de una cuenta de GitHub) y (Informacion de una cuenta de TikTok), Nueva Opcion en el Apartado [1] llamado (Google Dorks), Nuevo Opcion en el Apartado [5] Comprobar si tiene GitHub y saber su Username, Reparados los errores de los Apartados 6 y 7, solucionado el Bug al abrir un navegador en el SO Parrot.
+**(v1.1)** ---> Nuevas Opciones en el Apartado [4] llamadas (Informacion + email de una cuenta de GitHub) y (Informacion de una cuenta de TikTok), Nueva Opcion en el Apartado [1] llamado (Google Dorks), Nuevo Opcion en el Apartado [5] Comprobar si tiene GitHub y saber su Username, Reparados los errores de los Apartados 6 y 7, solucionado el Bug al abrir un navegador en el SO Parrot, eliminacion de que era la Opcion 2 dentro del Apartado 4.
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
