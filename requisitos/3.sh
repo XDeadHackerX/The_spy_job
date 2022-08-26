@@ -1,4 +1,5 @@
 #!/bin/bash
+user=`cat requisitos/configuracion/.user_not_root.txt`
 
 clear
 echo            
@@ -42,7 +43,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://www.google.com/search?q=%22$nick%22
+				su $user -c "firefox https://www.google.com/search?q=%22$nick%22"
 				;;
 			2 )	echo
 				read -p "[*] Escribe el Nickname, Alias o Apodo del Objetivo (Ej: anonymous23): " nick
@@ -53,7 +54,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://www.idcrawl.com/u/$nick
+				su $user -c "firefox https://www.idcrawl.com/u/$nick"
 				;;
 			3 )	echo
 				read -p "[*] Escribe el Nickname, Alias o Apodo del Objetivo (Ej: anonymous23): " nick
@@ -124,8 +125,8 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://www.google.com/search?q=%22$nick%22
-				sudo xterm -e sleep 1 && open https://www.idcrawl.com/u/$nick
+				su $user -c "firefox https://www.google.com/search?q=%22$nick%22"
+				su $user -c "firefox https://www.idcrawl.com/u/$nick"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;

@@ -1,4 +1,5 @@
 #!/bin/bash
+user=`cat requisitos/configuracion/.user_not_root.txt`
 
 clear
 echo            
@@ -22,19 +23,17 @@ echo
 echo "========================================================="
 echo "[1] Informacion de una cuenta Publica de Instragram""     |"
 echo "---------------------------------------------------------"
-echo "[2] Informacion de una cuenta Privada de Instragram""     |"
+echo "[2] Informacion de una cuenta de TikTok""                 |"
 echo "---------------------------------------------------------"
-echo "[3] Informacion de una cuenta de TikTok""                 |"
+echo "[3] Informacion de una cuenta Publica de Twitter""        |"
 echo "---------------------------------------------------------"
-echo "[4] Informacion de una cuenta Publica de Twitter""        |"
+echo "[4] Informacion de una cuenta de Twitch""                 |"
 echo "---------------------------------------------------------"
-echo "[5] Informacion de una cuenta de Twitch""                 |"
+echo "[5] Informacion + email de una cuenta de GitHub""         |"
 echo "---------------------------------------------------------"
-echo "[6] Informacion + email de una cuenta de GitHub""         |"
+echo "[6] Todo (Instragram, Twitter, Twitch, TikTok, GitHub)""  |"
 echo "---------------------------------------------------------"
-echo "[7] Todo (Instragram, Twitter, Twitch, TikTok, GitHub)""  |"
-echo "---------------------------------------------------------"
-echo "[8] Volver al Menu""                                      |"
+echo "[7] Volver al Menu""                                      |"
 echo "========================================================="
 echo
 read -p "Elige una opcion: " opc1
@@ -48,7 +47,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://www.picuki.com/profile/$username
+				su $user -c "firefox https://www.picuki.com/profile/$username"
 				;;
 			2 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
@@ -57,10 +56,9 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				cd requisitos/osi.ig
-				sudo python3 main.py -u $username
-				cd ..
-				cd ..
+				echo "Abriendo Navegador...."
+				sleep 2
+				su $user -c "firefox https://www.tiktok.com/@$username"
 				;;
 			3 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
@@ -71,7 +69,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://www.tiktok.com/@$username
+				su $user -c "firefox https://nitter.net/$username"
 				;;
 			4 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
@@ -82,7 +80,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://nitter.net/$username
+				su $user -c "firefox https://www.twitch.tv/$username"
 				;;
 			5 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
@@ -91,20 +89,9 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				sudo xterm -e sleep 1 && open https://www.twitch.tv/$username
-				;;
-			6 )	echo
-				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
-				echo
-				echo "#################################"
-				echo "[☢] UserName: $username"
-				echo "#################################"
-				echo
 				sudo python3 requisitos/osgint/osgint.py -u $username
 				;;
-			7 )	echo
+			6 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
 				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Informacion de una cuenta de Instagram (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
@@ -113,14 +100,9 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				cd requisitos/osi.ig
-				sudo python3 main.py -u $username
-				cd ..
-				cd ..
-				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://www.picuki.com/profile/$username
+				su $user -c "firefox https://www.picuki.com/profile/$username"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -135,7 +117,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://www.tiktok.com/@$username
+				su $user -c "firefox https://www.tiktok.com/@$username"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -149,7 +131,7 @@ read -p "Elige una opcion: " opc1
 				echo "#################################"
 				echo
 				echo "Abriendo Navegador...."
-				sudo xterm -e sleep 1 && open https://nitter.net/$username
+				su $user -c "firefox https://nitter.net/$username"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -163,7 +145,7 @@ read -p "Elige una opcion: " opc1
 				echo "#################################"
 				echo
 				echo "Abriendo Navegador...."
-				sudo xterm -e sleep 1 && open https://www.twitch.tv/$username
+				su $user -c "firefox https://www.twitch.tv/$username"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -181,7 +163,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
-			8 )	bash the_spy_job.sh
+			7 )	bash the_spy_job.sh
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"

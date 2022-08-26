@@ -30,19 +30,21 @@ echo
 read -p "[*] Elige una opcion: " opc1
 	case $opc1 in
 			1 )	echo
+				if ! [ -d requisitos/configuracion ]
+					then
+						mkdir requisitos/configuracion
+				fi
+				echo
 				echo "Usuarios del Sistema: " 
 				echo "_____________________"
 				users
 				echo
-				read -p "Escribe de los usuarios que aparecen aqui arriba el que estes utilizando: " user
-				sudo chown root: /home/$user/.Xauthority
+				read -p "Escribe de los usuarios que aparecen aqui arriba el que no tenga permisos root: " user
+				echo $user > requisitos/configuracion/.user_not_root.txt
 				
 				if ! [ -d requisitos/resultados ]
 					then
 						mkdir requisitos/resultados
-					else
-						echo
-						echo "Carpeta creada"
 				fi
 				
 				cd requisitos
@@ -70,16 +72,12 @@ read -p "[*] Elige una opcion: " opc1
 				sudo apt install gedit -y
 				sudo apt install wpscan -y
 
-				sudo rm -r osi.ig
 				sudo rm -r Cloudmare
 				sudo rm -r blackbird
 				sudo rm -r DorkMe
 				sudo rm -r osgint
 				sudo rm -r holehe
 
-				sudo git clone https://github.com/th3unkn0n/osi.ig.git && cd osi.ig && sudo chmod 777 requirements.txt && python3 -m pip install -r requirements.txt
-
-				cd ..
 
 				sudo git clone https://github.com/MrH0wl/Cloudmare.git && cd Cloudmare && chmod 777 Cloudmare.py
 
@@ -103,14 +101,15 @@ read -p "[*] Elige una opcion: " opc1
 				cd ..
 				;;
 			2 )	echo
-				read -p "[*] Pegue a continuacion la API de tu cuenta de Shodan: " API
-				shodan init $API
+				read -p "[*] Pegue a continuacion la API de tu cuenta de Shodan: " API1
+				shodan init $API1
+				echo $API1 > requisitos/configuracion/.api_shodan.txt
 				echo
 				echo "Listo"
 				;;
 			3 )	echo
 				read -p "[*] Pegue a continuacion la API de tu de https://veriphone.io: " API2
-				echo $API2 > requisitos/.api_phone.txt
+				echo $API2 > requisitos/configuracion/.api_phone.txt
 				echo
 				echo "Listo"
 				;;

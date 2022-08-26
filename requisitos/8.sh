@@ -1,4 +1,5 @@
 #!/bin/bash
+user=`cat requisitos/configuracion/.user_not_root.txt`
 
 clear
 echo            
@@ -45,7 +46,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://www.google.com/imghp?hl=en&ogbl= 
+				su $user -c "firefox https://www.google.com/imghp?hl=en&ogbl="
 				echo
 				;;
 			
@@ -75,7 +76,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				sudo xterm -e sleep 1 && open https://www.google.com/imghp?hl=en&ogbl= 
+				su $user -c "firefox https://www.google.com/imghp?hl=en&ogbl="
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
