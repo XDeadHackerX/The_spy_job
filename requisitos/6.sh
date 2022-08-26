@@ -70,14 +70,14 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox https://www.google.com/search?q=%22+$codigo$telefono%22"
+				su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22'"
 				;;
 			4 )	echo
 				echo "A continuacion escribe en la Web el Numero de Telefono, eliga el pais y rellene las captchat que salgan al darle a (Name Lookup)"
 				echo
 				echo "Abriendo Navegador...."
 				sleep 3
-				su $user -c "firefox https://www.revealname.com"
+				su $user -c "firefox 'https://www.revealname.com'"
 				;;
 			5 )	echo
 				read -p "[*] Escribe el Codigo del pais del Telefono del Objetivo (Ej: 34): " codigo
@@ -120,7 +120,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox https://www.google.com/search?q=%22+$codigo$telefono%22"
+				su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -137,7 +137,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 3
-				su $user -c "firefox https://www.revealname.com"
+				su $user -c "firefox 'https://www.revealname.com'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;

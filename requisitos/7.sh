@@ -87,7 +87,7 @@ read -p "Elige una opcion: " opc1
 							echo
 							echo "Abriendo Navegador...."
 							sleep 2
-							su $user -c "firefox https://www.shodan.io/host/$ip"
+							su $user -c "firefox 'https://www.shodan.io/host/$ip'"
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
@@ -116,7 +116,7 @@ read -p "Elige una opcion: " opc1
 							echo
 							echo "Abriendo Navegador...."
 							sleep 2
-							su $user -c "firefox https://www.shodan.io/host/$ip"
+							su $user -c "firefox 'https://www.shodan.io/host/$ip'"
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º y 2º den puertos erroneos /\/\/\/\/"
@@ -131,7 +131,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c 'firefox https://check-host.net/check-ping?host=$ip'
+				su $user -c "firefox 'https://check-host.net/check-ping?host=$ip'"
 				;;
 			5 )	clear
 				echo            
@@ -206,7 +206,7 @@ read -p "Elige una opcion: " opc1
 							echo
 							echo "Abriendo Navegador...."
 							sleep 2
-							su $user -c "firefox https://www.shodan.io/host/$ip"
+							su $user -c "firefox 'https://www.shodan.io/host/$ip'"
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
@@ -235,7 +235,7 @@ read -p "Elige una opcion: " opc1
 							echo
 							echo "Abriendo Navegador...."
 							sleep 2
-							su $user -c "firefox https://www.shodan.io/host/$ip"
+							su $user -c "firefox 'https://www.shodan.io/host/$ip'"
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º y 2º den puertos erroneos /\/\/\/\/"
@@ -254,7 +254,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c 'firefox https://check-host.net/check-ping?host=$ip'
+				su $user -c "firefox 'https://check-host.net/check-ping?host=$ip'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
