@@ -71,6 +71,7 @@ read -p "[*] Elige una opcion: " opc1
 				sudo apt install naabu -y
 				sudo apt install gedit -y
 				sudo apt install wpscan -y
+				sudo apt install firefox-esr -y
 
 				sudo rm -r Cloudmare
 				sudo rm -r blackbird
