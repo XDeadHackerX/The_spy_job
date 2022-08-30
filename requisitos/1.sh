@@ -104,18 +104,18 @@ read -p "Elige una opcion: " opc1
 				echo "[*] Ciudad: " `curl -s "http://ip-api.com/line/$dominio?fields=city"`
 				sleep 1
 				echo
-				echo "1º Escaneo usando Naabu (No API): "
-				echo "_________________________________"
+				echo "1º Escaneo de Puertos usando Naabu (No API): "
+				echo "____________________________________________"
 				echo
 				sudo naabu -host $ip -silent -json
 				echo
-				echo "2º Escaneo usando Shodan (API): "
-				echo "_______________________________"
+				echo "2º Escaneo de Puertos usando Shodan (API): "
+				echo "__________________________________________"
 				echo
 				sudo shodan host $ip
 				echo
-				echo "3º Escaneo usando Shodan Web (No API): "
-				echo "______________________________________"
+				echo "3º Escaneo de Puertos usando Shodan Web (No API): "
+				echo "_________________________________________________"
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
@@ -124,6 +124,9 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
 				echo
+				echo "[*] Servidores Host, DNS, MX, TXT (Poner el Dominio en dnsdumpster.com): "
+				echo
+				sleep 1
 				echo "Abriendo Navegador...."
 				sleep 2
 				su $user -c "firefox 'https://dnsdumpster.com'"
@@ -356,24 +359,26 @@ read -p "Elige una opcion: " opc1
 				echo "[*] Ciudad: " `curl -s "http://ip-api.com/line/$dominio?fields=city"`
 				sleep 1
 				echo
-				echo "1º Escaneo usando Naabu (No API): "
-				echo "_________________________________"
+				echo "1º Escaneo de Puertos usando Naabu (No API): "
+				echo "____________________________________________"
 				echo
 				sudo naabu -host $ip -silent -json
 				echo
-				echo "2º Escaneo usando Shodan (API): "
-				echo "_______________________________"
+				echo "2º Escaneo de Puertos usando Shodan (API): "
+				echo "__________________________________________"
 				echo
 				sudo shodan host $ip
 				echo
-				echo "3º Escaneo usando Shodan Web (No API): "
-				echo "______________________________________"
+				echo "3º Escaneo de Puertos usando Shodan Web (No API): "
+				echo "_________________________________________________"
 				echo
 				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
 				#su $user -c "firefox 'https://www.shodan.io/host/$ip'"
 				echo
 				echo
 				echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
+				echo
+				echo "[*] Servidores Host, DNS, MX, TXT (Poner el Dominio en dnsdumpster.com): "
 				echo
 				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
 				#su $user -c "firefox 'https://dnsdumpster.com'"
