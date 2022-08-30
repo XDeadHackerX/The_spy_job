@@ -12,7 +12,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -21,11 +21,11 @@ echo
 echo "[3] Informacion de un Nickname/Alias/Apodo"
 echo
 echo "=========================================================="
-echo "[1] Usar Google Dorks (Ver donde se a publicado ese Nick)""|"
+echo "[1] Buscar en 174 redes sociales una cuenta con ese Nick"" |"
 echo "----------------------------------------------------------"
-echo "[2] Usar Buscador especifico""                             |"
+echo "[2] Usar Google Dorks (Ver donde se a publicado ese Nick)""|"
 echo "----------------------------------------------------------"
-echo "[3] Buscar en 174 redes sociales una cuenta con ese Nick"" |"
+echo "[3] Usar Buscador especifico"" |"
 echo "----------------------------------------------------------"
 echo "[4] Todo (Redes Sociales, Webs, Imagenes, Posts, etc)""    |"
 echo "----------------------------------------------------------"
@@ -35,28 +35,6 @@ echo
 read -p "Elige una opcion: " opc1
 	case $opc1 in
 			1 )	echo
-				read -p "[*] Escribe el Nickname, Alias o Apodo del Objetivo (Ej: anonymous23): " nick
-				echo
-				echo "################################"
-				echo "[☢] Nickname: $nick"
-				echo "################################"
-				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://www.google.com/search?q=%22$nick%22'"
-				;;
-			2 )	echo
-				read -p "[*] Escribe el Nickname, Alias o Apodo del Objetivo (Ej: anonymous23): " nick
-				echo
-				echo "################################"
-				echo "[☢] Nickname: $nick"
-				echo "################################"
-				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://www.idcrawl.com/u/$nick'"
-				;;
-			3 )	echo
 				read -p "[*] Escribe el Nickname, Alias o Apodo del Objetivo (Ej: anonymous23): " nick
 				echo
 				echo "################################"
@@ -81,6 +59,29 @@ read -p "Elige una opcion: " opc1
 				sudo python blackbird.py -f $nick.json
 				cd ..
 				cd ..
+				;;
+			2 )	echo
+				read -p "[*] Escribe el Nickname, Alias o Apodo del Objetivo (Ej: anonymous23): " nick
+				echo
+				echo "################################"
+				echo "[☢] Nickname: $nick"
+				echo "################################"
+				echo
+				echo "Abriendo Navegador...."
+				sleep 2
+				su $user -c "firefox 'https://www.google.com/search?q=%22$nick%22'"
+				;;
+			3 )	echo
+				read -p "[*] Escribe el Nickname, Alias o Apodo del Objetivo (Ej: anonymous23): " nick
+				echo
+				echo "################################"
+				echo "[☢] Nickname: $nick"
+				echo "################################"
+				echo
+				echo
+				echo "Abriendo Navegador...."
+				sleep 2
+				su $user -c "firefox 'https://www.idcrawl.com/u/$nick'"
 				;;
 			4 )	echo
 				read -p "[*] Escribe el Nickname, Alias o Apodo del Objetivo (Ej: anonymous23): " nick
@@ -125,8 +126,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/search?q=%22$nick%22'"
-				su $user -c "firefox 'https://www.idcrawl.com/u/$nick'"
+				su $user -c "firefox 'https://www.google.com/search?q=%22$nick%22'" | su $user -c "firefox 'https://www.idcrawl.com/u/$nick'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;

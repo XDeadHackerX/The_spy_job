@@ -12,7 +12,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -21,15 +21,15 @@ echo
 echo "[4] Informacion de una Red Social"
 echo
 echo "========================================================="
-echo "[1] Informacion de una cuenta Publica de Instragram""     |"
+echo "[1] Informacion + email de una cuenta de GitHub""         |"
 echo "---------------------------------------------------------"
-echo "[2] Informacion de una cuenta de TikTok""                 |"
+echo "[2] Informacion de una cuenta Publica de Instragram""     |"
 echo "---------------------------------------------------------"
-echo "[3] Informacion de una cuenta Publica de Twitter""        |"
+echo "[3] Informacion de una cuenta de TikTok""                 |"
 echo "---------------------------------------------------------"
-echo "[4] Informacion de una cuenta de Twitch""                 |"
+echo "[4] Informacion de una cuenta Publica de Twitter""        |"
 echo "---------------------------------------------------------"
-echo "[5] Informacion + email de una cuenta de GitHub""         |"
+echo "[5] Informacion de una cuenta de Twitch""                 |"
 echo "---------------------------------------------------------"
 echo "[6] Todo (Instragram, Twitter, Twitch, TikTok, GitHub)""  |"
 echo "---------------------------------------------------------"
@@ -45,9 +45,7 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://www.picuki.com/profile/$username'"
+				sudo python3 requisitos/osgint/osgint.py -u $username
 				;;
 			2 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
@@ -58,7 +56,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox 'https://www.tiktok.com/@$username'"
+				su $user -c "firefox 'https://www.picuki.com/profile/$username'"
 				;;
 			3 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
@@ -69,7 +67,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox 'https://nitter.net/$username'"
+				su $user -c "firefox 'https://www.tiktok.com/@$username'"
 				;;
 			4 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
@@ -80,7 +78,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox 'https://www.twitch.tv/$username'"
+				su $user -c "firefox 'https://nitter.net/$username'"
 				;;
 			5 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
@@ -89,10 +87,26 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				sudo python3 requisitos/osgint/osgint.py -u $username
+				echo "Abriendo Navegador...."
+				sleep 2
+				su $user -c "firefox 'https://www.twitch.tv/$username'"
 				;;
 			6 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
+				echo
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Informacion de una cuenta de GitHub (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo
+				echo
+				echo "#################################"
+				echo "[☢] UserName: $username"
+				echo "#################################"
+				echo
+				sudo python3 requisitos/osgint/osgint.py -u $username
+				echo
+				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
+				echo
+				echo
+				echo
 				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Informacion de una cuenta de Instagram (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
@@ -100,9 +114,8 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://www.picuki.com/profile/$username'"
+				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
+				#su $user -c "firefox 'https://www.picuki.com/profile/$username'" 
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -115,9 +128,8 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://www.tiktok.com/@$username'"
+				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
+				#su $user -c "firefox 'https://www.tiktok.com/@$username'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -130,8 +142,8 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				echo "Abriendo Navegador...."
-				su $user -c "firefox 'https://nitter.net/$username'"
+				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
+				#su $user -c "firefox 'https://nitter.net/$username'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -144,22 +156,9 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				echo "Abriendo Navegador...."
-				su $user -c "firefox 'https://www.twitch.tv/$username'"
-				echo
-				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
-				echo
-				echo
-				echo
-				echo
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Informacion de una cuenta de GitHub (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
-				echo
-				echo
-				echo "#################################"
-				echo "[☢] UserName: $username"
-				echo "#################################"
-				echo
-				sudo python3 requisitos/osgint/osgint.py -u $username
+				echo "Abriendo Navegador y Todas las Pestañas...."
+				sleep 2
+				su $user -c "firefox 'https://www.picuki.com/profile/$username'" | su $user -c "firefox 'https://www.tiktok.com/@$username'" | su $user -c "firefox 'https://nitter.net/$username'" | su $user -c "firefox 'https://www.twitch.tv/$username'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;

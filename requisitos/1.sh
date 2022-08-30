@@ -12,7 +12,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -25,10 +25,10 @@ echo "[1] Identificar la Web y reconocer sus tecnologias""         |"
 echo "------------------------------------------------------------"
 echo "[2] Informacion sobre el propietario de la Web/host""        |"
 echo "------------------------------------------------------------"
-echo "[3] Scaneo del Servidor (Puertos, Versiones, SO)""           |"
+echo "[3] Scaneo del Servidor (Puertos con sus Versiones y SO) y"" |"
+echo " (Servidores Host, DNS, MX, TXT)""                           |"
 echo "------------------------------------------------------------"
-echo "[4] Extraer el servidor de Origen, Servidor DNS, MX, TXT y"" |"
-echo "    Host, tambien de las webs protegidas por Cloudflare""    |"
+echo "[4] Intentar Extraer Ip Real Web protegidas por Cloudflare"" |"
 echo "------------------------------------------------------------"
 echo "[5] Averiguar el Encriptado SSL de la Web""                  |"
 echo "------------------------------------------------------------"
@@ -86,7 +86,7 @@ read -p "Elige una opcion: " opc1
 			3 )	echo
 				read -p "[*] Dominio/Pagina Web (Ej: web.com): " dominio
 				echo 
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Scaneo del Servidor (Puertos, Versiones, SO) (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Scaneo del Servidor (Puertos con sus Versiones y SO) y (Servidores Host, DNS, MX, TXT) (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "######################################"
 				echo "[☢] Pagina Web: www.$dominio"
@@ -124,12 +124,16 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
 				echo
+				echo "Abriendo Navegador...."
+				sleep 2
+				su $user -c "firefox 'https://dnsdumpster.com'"
+				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
 			4 )	echo
 				read -p "[*] Dominio/Pagina Web (Ej: web.com): " dominio
 				echo
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Extrayendo Servidor de Origen, servidor DNS, MX, TXT, Host. Tambien los protegido por Cloudflare(x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Intentando Extraer Ip Real Web protegidas por Cloudflare gracias a DNSs mal Configurados (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "######################################"
 				echo "[☢] Pagina Web: www.$dominio"
@@ -139,10 +143,6 @@ read -p "Elige una opcion: " opc1
 				sudo python Cloudmare.py -u $dominio
 				cd ..
 				cd ..
-				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://dnsdumpster.com'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
@@ -267,9 +267,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/search?q=%22$dominio%22'"
-				sleep 3
-				su $user -c "firefox 'https://www.google.com/search?q=site%3A$dominio'"
+				su $user -c "firefox 'https://www.google.com/search?q=%22$dominio%22'" | su $user -c "firefox 'https://www.google.com/search?q=site%3A$dominio'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
@@ -299,7 +297,7 @@ read -p "Elige una opcion: " opc1
 				echo "                                               | |      __/ |   ★  ★   _/ |               "
 				echo "                                               |_|     |___/          |__/                "
 				echo "                              __________________________________________________"					
-				echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+				echo "                               ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 				echo "          -------------------------------------------------------------------------------------------"
 				echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 				echo "          -------------------------------------------------------------------------------------------" 
@@ -340,7 +338,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo
 				echo
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Scaneo del Servidor (Puertos, Versiones, SO) (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Scaneo del Servidor (Puertos con sus Versiones y SO) y (Servidores Host, DNS, MX, TXT) (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "######################################"
 				echo "[☢] Pagina Web: www.$dominio"
@@ -371,19 +369,21 @@ read -p "Elige una opcion: " opc1
 				echo "3º Escaneo usando Shodan Web (No API): "
 				echo "______________________________________"
 				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://www.shodan.io/host/$ip'"
+				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
+				#su $user -c "firefox 'https://www.shodan.io/host/$ip'"
 				echo
 				echo
 				echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
+				echo
+				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
+				#su $user -c "firefox 'https://dnsdumpster.com'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
 				echo
 				echo
 				echo
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Extrayendo Servidor de Origen, servidor DNS, MX, TXT, Host. Tambien los protegido por Cloudflare(x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Intentando Extraer Ip Real Web protegidas por Cloudflare gracias a DNSs mal Configurados (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "######################################"
 				echo "[☢] Pagina Web: www.$dominio"
@@ -393,10 +393,6 @@ read -p "Elige una opcion: " opc1
 				sudo python Cloudmare.py -u $dominio
 				cd ..
 				cd ..
-				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://dnsdumpster.com'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -512,11 +508,8 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] Pagina Web: www.$dominio"
 				echo "######################################"
 				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://www.google.com/search?q=%22$dominio%22'"
-				sleep 3
-				su $user -c "firefox 'https://www.google.com/search?q=site%3A$dominio'"
+				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
+				#su $user -c "firefox 'https://www.google.com/search?q=%22$dominio%22'" | su $user -c "firefox 'https://www.google.com/search?q=site%3A$dominio'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -529,9 +522,9 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] Pagina Web: www.$dominio"
 				echo "######################################"
 				echo
-				echo "Abriendo Navegador...."
+				echo "Abriendo Navegador y Todas las Pestañas...."
 				sleep 2
-				su $user -c "firefox 'https://check-host.net/check-http?host=$dominio'"
+				su $user -c "firefox 'https://www.shodan.io/host/$ip'" | su $user -c "firefox 'https://dnsdumpster.com'" | su $user -c "firefox 'https://www.google.com/search?q=%22$dominio%22'" | su $user -c "firefox 'https://www.google.com/search?q=site%3A$dominio'" | su $user -c "firefox 'https://check-host.net/check-http?host=$dominio'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;

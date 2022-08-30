@@ -12,7 +12,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -144,7 +144,7 @@ read -p "Elige una opcion: " opc1
 				echo "                                               | |      __/ |   ★  ★   _/ |               "
 				echo "                                               |_|     |___/          |__/                "
 				echo "                              __________________________________________________"					
-				echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+				echo "                               ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 				echo "          -------------------------------------------------------------------------------------------"
 				echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 				echo "          -------------------------------------------------------------------------------------------" 
@@ -204,9 +204,8 @@ read -p "Elige una opcion: " opc1
 							echo "3º Escaneo usando Shodan Web (No API): "
 							echo "______________________________________"
 							echo
-							echo "Abriendo Navegador...."
-							sleep 2
-							su $user -c "firefox 'https://www.shodan.io/host/$ip'"
+							echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
+							#su $user -c "firefox 'https://www.shodan.io/host/$ip'"
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º de puertos erroneos /\/\/\/\/"
@@ -233,9 +232,8 @@ read -p "Elige una opcion: " opc1
 							echo "4º Escaneo usando Shodan Web (No API): "
 							echo "______________________________________"
 							echo
-							echo "Abriendo Navegador...."
-							sleep 2
-							su $user -c "firefox 'https://www.shodan.io/host/$ip'"
+							echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
+							#su $user -c "firefox 'https://www.shodan.io/host/$ip'"
 							echo
 							echo
 							echo "/\/\/\/\/\ En caso de usar una VPN es probable que la Opcion 1º y 2º den puertos erroneos /\/\/\/\/"
@@ -252,9 +250,9 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] IP: $ip"
 				echo "########################"
 				echo
-				echo "Abriendo Navegador...."
+				echo "Abriendo Navegador y Todas las Pestañas...."
 				sleep 2
-				su $user -c "firefox 'https://check-host.net/check-ping?host=$ip'"
+				su $user -c "firefox 'https://www.shodan.io/host/$ip'" | su $user -c "firefox 'https://check-host.net/check-ping?host=$ip'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;

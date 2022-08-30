@@ -12,7 +12,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -36,6 +36,7 @@ read -p "Elige una opcion: " opc1
 				read -p "[*] Escribe el Nombre del Objetivo (Ej: Guillermo): " nombre
 				read -p "[*] Escribe el 1º Apellido del Objetivo (Ej: Vicente): " apellido1
 				read -p "[*] Escribe el 2º Apellido del Objetivo (Ej: Ibanez): " apellido2
+				read -p "[*] Palabra clave /Opcional/ (Ej: Telefono, Email, Localizacion, etc): " info
 				echo
 				echo "###########################################"
 				echo "[☢] Nombre: $nombre $apellido1 $apellido2"
@@ -43,7 +44,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22'"
+				su $user -c "firefox 'https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22'" | su $user -c "firefox 'https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22+$info'" 
 				;;
 			2 )	echo
 				read -p "[*] Escribe el Nombre del Objetivo (Ej: Guillermo): " nombre
@@ -62,6 +63,7 @@ read -p "Elige una opcion: " opc1
 				read -p "[*] Escribe el Nombre del Objetivo (Ej: Guillermo): " nombre
 				read -p "[*] Escribe el 1º Apellido del Objetivo (Ej: Vicente): " apellido1
 				read -p "[*] Escribe el 2º Apellido del Objetivo (Ej: Ibanez): " apellido2
+				read -p "[*] Palabra clave /Opcional/ (Ej: Telefono, Email, Localizacion, etc): " info
 				echo
 				echo "###########################################"
 				echo "[☢] Nombre: $nombre $apellido1 $apellido2"
@@ -83,8 +85,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22'"
-				su $user -c "firefox 'https://www.idcrawl.com/$nombre-$apellido1-$apellido2'"
+				su $user -c "firefox 'https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22'" | su $user -c "firefox 'https://www.google.com/search?q=%22$nombre+$apellido1+$apellido2%22+$info'" | su $user -c "firefox 'https://www.idcrawl.com/$nombre-$apellido1-$apellido2'"
 				;;
 			4 )	bash the_spy_job.sh
 				;;

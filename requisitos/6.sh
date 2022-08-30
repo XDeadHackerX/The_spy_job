@@ -13,7 +13,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -63,6 +63,7 @@ read -p "Elige una opcion: " opc1
 			3 )	echo
 				read -p "[*] Escribe el Codigo del pais del Telefono del Objetivo (Ej: 34): " codigo
 				read -p "[*] Escribe el Numero de Telefono del Objetivo (Ej: 62529541): " telefono
+				read -p "[*] Palabra clave /Opcional/ (Ej: Nombre, Email, Localizacion, etc): " info
 				echo
 				echo "#############################"
 				echo "[☢] Telefono: +$codigo $telefono"
@@ -70,7 +71,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22'"
+				su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22'" | su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22+$info'"
 				;;
 			4 )	echo
 				echo "A continuacion escribe en la Web el Numero de Telefono, eliga el pais y rellene las captchat que salgan al darle a (Name Lookup)"
@@ -82,6 +83,7 @@ read -p "Elige una opcion: " opc1
 			5 )	echo
 				read -p "[*] Escribe el Codigo del pais del Telefono del Objetivo (Ej: 34): " codigo
 				read -p "[*] Escribe el Numero de Telefono del Objetivo (Ej: 62529541): " telefono
+				read -p "[*] Palabra clave /Opcional/ (Ej: Nombre, Email, Localizacion, etc): " info
 				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Ver a que Compañia pertenece el Numero de Telefono (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
@@ -118,9 +120,9 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] Telefono: +$codigo $telefono"
 				echo "#############################"
 				echo
-				echo "Abriendo Navegador...."
-				sleep 2
-				su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22'"
+				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
+				#su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22'"
+				#su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22+$info'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -135,9 +137,9 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "A continuacion escribe en la Web el Numero de Telefono, elige el pais y rellene las captchat que salgan al darle a (Name Lookup)"
 				echo
-				echo "Abriendo Navegador...."
-				sleep 3
-				su $user -c "firefox 'https://www.revealname.com'"
+				echo "Abriendo Navegador y Todas las Pestañas...."
+				sleep 2
+				su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22'" | su $user -c "firefox 'https://www.google.com/search?q=%22+$codigo$telefono%22+$info'" | su $user -c "firefox 'https://www.revealname.com'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
