@@ -32,11 +32,13 @@
 
 ## 🛠 Instalar Herramienta 🛠
 
+**0)** Instalar y usar la Herramienta con **Root**
+
 **1)** sudo apt update && apt -y full-upgrade
 
 **2)** sudo apt-get install git
 
-**3)** git clone https://github.com/XDeadHackerX/The_spy_job.git
+**3)** git clone https://github.com/XDeadHackerX/The_spy_job.git 
 
 **4)** cd The_spy_job
 
@@ -53,9 +55,13 @@ dichas APIs gratuitas para sacar el máximo partido a The_spy_job
 
 ## 🎲 Tener en Cuenta 🎲
 
-**[1]** En el Apartado ([0] Instalar y Configurar Requisitos) podemos Configurar la API de shodan.io y veriphone.io para sacar el mejor partido de esta Herramienta, las dos son gratuitas.
+**[1]** En el Apartado ([0] Instalar y Configurar Requisitos) cuando le demos a la Opción 1 para Instalar los Requisitos nos pedirá que pongamos a un usuario que **no** tenga permisos root, este paso es muy importante, ya que si ponemos a un usuario con permisos root, o lo escribimos mal o lo ponemos doble no funcionarán las Opciones que tengan que abrir un Navegador desde la Terminal.
 
-**[2]**  En el Apartado ([7] Información de una IP Pública) con el uso de VPN la mayoría de servidores dan respuestas erróneas sobre sus puertos. Para solventar esto he puesto varios Scanners y 2 de ellos te dan los puertos correctos a pesar de la VPN.
+**[2]** En el Apartado ([0] Instalar y Configurar Requisitos) podemos Configurar la API de shodan.io y veriphone.io para sacar el mejor partido de esta Herramienta, las dos son gratuitas.
+
+**[3]** En el Apartado ([7] Información de una IP Pública) con el uso de VPN la mayoría de servidores dan respuestas erróneas sobre sus puertos. Para solventar esto he puesto varios Scanners y 2 de ellos te dan los puertos correctos a pesar de la VPN.
+
+**[4]** Personalmente recomiendo usar la Herramienta con la Terminal en Pantalla Completa (Gráficamente más bonito).
 
 ## 🔎 Versiones 🔎
 
