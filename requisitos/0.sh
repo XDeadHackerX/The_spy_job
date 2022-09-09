@@ -115,14 +115,14 @@ read -p "[*] Elige una opcion: " opc1
 				echo "Listo"
 				;;
 			3 )	echo
-				read -p "[*] Pegue a continuacion la API de tu cuenta de Shodan: " API2
+				read -p "[*] Pegue a continuacion la API de tu cuenta de Shodan.io: " API2
 				shodan init $API2
 				echo $API2 > requisitos/configuracion/.api_shodan.txt
 				echo
 				echo "Listo"
 				;;
 			4 )	echo
-				read -p "[*] Pegue a continuacion la API de tu cuenta de ZoomEye: " API3
+				read -p "[*] Pegue a continuacion la API de tu cuenta de ZoomEye.org: " API3
 				zoomeye init -apikey $API3
 				echo $API3 > requisitos/configuracion/.api_zoomeye.txt
 				echo
