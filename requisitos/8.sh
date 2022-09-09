@@ -25,9 +25,11 @@ echo "[1] Extraer Metadatos de la Imagen""   |"
 echo "--------------------------------------"
 echo "[2] Busqueda de la Imagen en Google""  |"
 echo "--------------------------------------"
-echo "[3] Todo (Metadatos, Buscador Google)""|"
+echo "[3] Usar Buscador especifico""         |"
 echo "--------------------------------------"
-echo "[4] Volver al Menu""                   |"
+echo "[4] Todo (Metadatos, Buscador Google)""|"
+echo "--------------------------------------"
+echo "[5] Volver al Menu""                   |"
 echo "======================================"
 echo
 read -p "Elige una opcion: " opc1
@@ -49,8 +51,15 @@ read -p "Elige una opcion: " opc1
 				su $user -c "firefox 'https://www.google.com/imghp?hl=en&ogbl='"
 				echo
 				;;
-			
 			3 )	echo
+				echo "A continuacion cuando se abrira la Pagina Web, deja caer la Imagen y empezara la busqueda"
+				echo
+				echo "Abriendo Navegador...."
+				sleep 2
+				su $user -c "firefox 'https://tineye.com'"
+				echo
+				;;
+			4 )	echo
 				read -p "[*] Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " imagen
 				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Extrañendo Metadatos de la Imagen (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
@@ -66,7 +75,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo
 				echo
-				echo "⇩⇩⇩(x_x) Buscar la Imagen a traves de Google para que use su red neuronal para buscar cuincidencias en todo  Internet (x_x)⇩⇩⇩"
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Buscar la Imagen a traves de Google para usar su red neuronal y usar un Buscador especifico (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "################################################################"
 				echo "[☢] Imagen: $imagen"
@@ -74,13 +83,13 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "A continuacion cuando se abrira la Pagina Web, deja caer la Imagen y empezara la busqueda"
 				echo
-				echo "Abriendo Navegador...."
+				echo "Abriendo Navegador y Todas las Pestañas...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/imghp?hl=en&ogbl='"
+				su $user -c "firefox 'https://www.google.com/imghp?hl=en&ogbl='" | su $user -c "firefox 'https://tineye.com'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
-			4 )	bash the_spy_job.sh
+			5 )	bash the_spy_job.sh
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"

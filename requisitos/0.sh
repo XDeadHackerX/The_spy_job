@@ -11,7 +11,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -21,9 +21,10 @@ echo "[0] Instalar y Configurar Requisitos"
 echo
 echo "================================="
 echo "[1] Instalar requisitos""         |"
-echo "[2] Configurar API Shodan""       |"
-echo "[3] Configurar API Info Telefono""|"
-echo "[4] Volver al Menu""              |"
+echo "[2] Configurar API veriphone.io"" |"
+echo "[3] Configurar API Shodan""       |"
+echo "[4] Configurar API ZoomEye""       |"
+echo "[5] Volver al Menu""              |"
 echo "================================="
 echo
 echo
@@ -72,16 +73,22 @@ read -p "[*] Elige una opcion: " opc1
 				sudo apt install gedit -y
 				sudo apt install wpscan -y
 				sudo apt install firefox-esr -y
+				sudo pip3 install zoomeye
 
 				sudo rm -r Cloudmare
 				sudo rm -r blackbird
 				sudo rm -r DorkMe
 				sudo rm -r osgint
 				sudo rm -r holehe
+				sudo rm -r ZoomEye-python
 
 
 				sudo git clone https://github.com/MrH0wl/Cloudmare.git && cd Cloudmare && chmod 777 Cloudmare.py
 
+				cd ..
+				
+				sudo git clone https://github.com/knownsec/ZoomEye-python.git && cd ZoomEye-python && pip3 install -r requirements.txt && python3 setup.py install
+				
 				cd ..
 				
 				sudo git clone https://github.com/hippiiee/osgint.git && cd osgint && pip3 install -r requirements.txt
@@ -102,19 +109,26 @@ read -p "[*] Elige una opcion: " opc1
 				cd ..
 				;;
 			2 )	echo
-				read -p "[*] Pegue a continuacion la API de tu cuenta de Shodan: " API1
-				shodan init $API1
-				echo $API1 > requisitos/configuracion/.api_shodan.txt
+				read -p "[*] Pegue a continuacion la API de tu de https://veriphone.io: " API1
+				echo $API1 > requisitos/configuracion/.api_phone.txt
 				echo
 				echo "Listo"
 				;;
 			3 )	echo
-				read -p "[*] Pegue a continuacion la API de tu de https://veriphone.io: " API2
-				echo $API2 > requisitos/configuracion/.api_phone.txt
+				read -p "[*] Pegue a continuacion la API de tu cuenta de Shodan: " API2
+				shodan init $API2
+				echo $API2 > requisitos/configuracion/.api_shodan.txt
 				echo
 				echo "Listo"
 				;;
-			4 )	bash the_spy_job.sh
+			4 )	echo
+				read -p "[*] Pegue a continuacion la API de tu cuenta de ZoomEye: " API3
+				zoomeye init -apikey $API3
+				echo $API3 > requisitos/configuracion/.api_zoomeye.txt
+				echo
+				echo "Listo"
+				;;
+			5 )	bash the_spy_job.sh
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"

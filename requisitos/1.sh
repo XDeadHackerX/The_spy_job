@@ -114,7 +114,12 @@ read -p "Elige una opcion: " opc1
 				echo
 				sudo shodan host $ip
 				echo
-				echo "3º Escaneo de Puertos usando Shodan Web (No API): "
+				echo "3º Escaneo de Puertos usando ZoomEye (API): "
+				echo "___________________________________________"
+				echo
+				sudo zoomeye ip $ip
+				echo
+				echo "4º Escaneo de Puertos usando Shodan Web (No API): "
 				echo "_________________________________________________"
 				echo
 				echo "Abriendo Navegador...."
@@ -369,7 +374,12 @@ read -p "Elige una opcion: " opc1
 				echo
 				sudo shodan host $ip
 				echo
-				echo "3º Escaneo de Puertos usando Shodan Web (No API): "
+				echo "3º Escaneo de Puertos usando ZoomEye (API): "
+				echo "___________________________________________"
+				echo
+				sudo zoomeye ip $ip
+				echo
+				echo "4º Escaneo de Puertos usando Shodan Web (No API): "
 				echo "_________________________________________________"
 				echo
 				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."

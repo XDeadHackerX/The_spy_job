@@ -82,7 +82,12 @@ read -p "Elige una opcion: " opc1
 							echo
 							sudo shodan host $ip
 							echo
-							echo "3º Escaneo usando Shodan Web (No API): "
+							echo "3º Escaneo de Puertos usando ZoomEye (API): "
+							echo "___________________________________________"
+							echo
+							sudo zoomeye ip $ip
+							echo
+							echo "4º Escaneo usando Shodan Web (No API): "
 							echo "______________________________________"
 							echo
 							echo "Abriendo Navegador...."
@@ -111,7 +116,12 @@ read -p "Elige una opcion: " opc1
 							echo
 							sudo shodan host $ip
 							echo
-							echo "4º Escaneo usando Shodan Web (No API): "
+							echo "4º Escaneo de Puertos usando ZoomEye (API): "
+							echo "___________________________________________"
+							echo
+							sudo zoomeye ip $ip
+							echo
+							echo "5º Escaneo usando Shodan Web (No API): "
 							echo "______________________________________"
 							echo
 							echo "Abriendo Navegador...."
@@ -201,7 +211,12 @@ read -p "Elige una opcion: " opc1
 							echo
 							sudo shodan host $ip
 							echo
-							echo "3º Escaneo usando Shodan Web (No API): "
+							echo "3º Escaneo de Puertos usando ZoomEye (API): "
+							echo "___________________________________________"
+							echo
+							sudo zoomeye ip $ip
+							echo
+							echo "4º Escaneo usando Shodan Web (No API): "
 							echo "______________________________________"
 							echo
 							echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
@@ -229,7 +244,12 @@ read -p "Elige una opcion: " opc1
 							echo
 							sudo shodan host $ip
 							echo
-							echo "4º Escaneo usando Shodan Web (No API): "
+							echo "4º Escaneo de Puertos usando ZoomEye (API): "
+							echo "___________________________________________"
+							echo
+							sudo zoomeye ip $ip
+							echo
+							echo "5º Escaneo usando Shodan Web (No API): "
 							echo "______________________________________"
 							echo
 							echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
