@@ -23,7 +23,7 @@ echo "================================="
 echo "[1] Instalar requisitos""         |"
 echo "[2] Configurar API veriphone.io"" |"
 echo "[3] Configurar API Shodan""       |"
-echo "[4] Configurar API ZoomEye""       |"
+echo "[4] Configurar API ZoomEye""      |"
 echo "[5] Volver al Menu""              |"
 echo "================================="
 echo
