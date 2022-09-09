@@ -28,7 +28,7 @@
 
 :ballot_box_with_check: **OSINT a IPs Públicas** --> [*Compañía (ISP), Geolocalización de la ciudad exacta, Buscar puertos abiertos con sus servicios/versión, Ping de la Web desde varios Países*]
 
-:ballot_box_with_check: **OSINT a Imágenes** --> [*Metadatos, Motor de Búsqueda de Google*]
+:ballot_box_with_check: **OSINT a Imágenes** --> [*Metadatos, Motor de Búsqueda de Google, Buscador específico de Imágenes*]
 
 ## 🛠 Instalar Herramienta 🛠
 
@@ -71,7 +71,7 @@ dichas APIs gratuitas para sacar el máximo partido a The_spy_job
 
 **(v1.2)** ---> Ampliación de Google Dorks en los Apartados 1, 2 y 6. 1=(Nueva búsqueda, filtra las URLs y fotos de toda la Web), en el Apartado 2 (Permite añadir una palabra clave a la búsqueda para hacerla más avanzada y específica) y por último en el Apartado 6 (También permite añadir una palabra clave a la búsqueda para hacerla más avanzada y específica), Reparación de error que afectaba a la penúltima Opción (Todas las opciones/Todo) de Todos los Apartados el cual cuando lanzaba un Navegador la Herramienta se paraba y no seguía hasta que cerrabas el Navegador.
 
-**(v1.3)** ---> Incorporacion del famoso Motor de Busqueda Zoomeye (API) en el Apartado [1] la Opcion [3] y en el Apartado [7] la Opcion [3], Nuevo Opcion en el Apartado [8] llamada [3] Usar Buscador especifico, el cual usa un Motor de Busqueda expecifico de imagenes, Mejoras visuales.
+**(v1.3)** ---> Incorporación del famoso Motor de Búsqueda Zoomeye (API) en el Apartado [1] la Opción [3] y en el Apartado [7] la Opción [3], Nuevo Opción en el Apartado [8] llamada [3] Usar Buscador específico, el cual usa un Motor de Búsqueda específico de imágenes, Mejoras visuales.
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
