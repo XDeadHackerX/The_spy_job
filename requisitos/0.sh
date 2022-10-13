@@ -77,7 +77,6 @@ read -p "[*] Elige una opcion: " opc1
 
 				sudo rm -r Cloudmare
 				sudo rm -r blackbird
-				sudo rm -r DorkMe
 				sudo rm -r osgint
 				sudo rm -r holehe
 				sudo rm -r ZoomEye-python
@@ -100,10 +99,6 @@ read -p "[*] Elige una opcion: " opc1
 				cd ..
 				
 				sudo git clone https://github.com/megadose/holehe.git && cd holehe && python3 setup.py install
-				
-				cd ..
-
-				sudo git clone https://github.com/blueudp/DorkMe.git && cd DorkMe && pip install -r requirements.txt
 
 				cd ..
 				cd ..

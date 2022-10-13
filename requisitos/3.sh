@@ -21,7 +21,7 @@ echo
 echo "[3] Informacion de un Nickname/Alias/Apodo"
 echo
 echo "=========================================================="
-echo "[1] Buscar en 174 redes sociales una cuenta con ese Nick"" |"
+echo "[1] Buscar en 574 redes sociales una cuenta con ese Nick"" |"
 echo "----------------------------------------------------------"
 echo "[2] Usar Google Dorks (Ver donde se a publicado ese Nick)""|"
 echo "----------------------------------------------------------"
@@ -45,18 +45,17 @@ read -p "Elige una opcion: " opc1
 				cd requisitos/blackbird
 				echo "==========================="
 				echo "  Buscando cuenta $nick"
-				echo "   en 174 Redes Sociales"
+				echo "   en 574 Redes Sociales"
 				echo "==========================="
 				echo "------->""                  |"
 				sleep 1
 				echo "------------>""             |"
 				sleep 1
-				sudo python blackbird.py -u $nick >/dev/null
 				echo "------------------->""      |"
 				sleep 1
 				echo "------------------------->""|"
 				echo "==========================="
-				sudo python blackbird.py -f $nick.json
+				sudo python blackbird.py -u $nick
 				cd ..
 				cd ..
 				;;
@@ -100,7 +99,6 @@ read -p "Elige una opcion: " opc1
 				sleep 1
 				echo "------------>""             |"
 				sleep 1
-				sudo python blackbird.py -u $nick >/dev/null
 				echo "------------------->""      |"
 				sleep 1
 				echo "------------------------->""|"
@@ -108,7 +106,7 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Redes sociales con el Nickname de $nick (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
-				sudo python blackbird.py -f $nick.json
+				sudo python blackbird.py -u $nick
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo

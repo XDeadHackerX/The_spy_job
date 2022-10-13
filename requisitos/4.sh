@@ -46,6 +46,7 @@ read -p "Elige una opcion: " opc1
 				echo "#################################"
 				echo
 				sudo python3 requisitos/osgint/osgint.py -u $username
+				sleep 2
 				;;
 			2 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
