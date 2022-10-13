@@ -18,7 +18,7 @@
 
 :ballot_box_with_check: **OSINT a Personas** --> [*Google Dorks, Redes Sociales, Imágenes, Posts, etc*]
 
-:ballot_box_with_check: **OSINT a Nicknames/Alias** --> [*Google Dorks, Buscar en 174 Redes Sociales una cuenta con ese Nick, Imágenes, Posts*]
+:ballot_box_with_check: **OSINT a Nicknames/Alias** --> [*Google Dorks, Buscar en 574 Redes Sociales una cuenta con ese Nick, Imágenes, Posts*]
 
 :ballot_box_with_check: **OSINT a Redes Sociales** --> [*Información de una Cuenta de Instagram/TikTok/Twitter/Twitch/(GitHub + email) = sin tener una cuenta*]
 
@@ -61,7 +61,9 @@ dichas APIs gratuitas para sacar el máximo partido a The_spy_job
 
 **[3]** En el Apartado ([7] Información de una IP Pública) con el uso de VPN la mayoría de servidores dan respuestas erróneas sobre sus puertos. Para solventar esto he puesto varios Scanners y 2 de ellos te dan los puertos correctos a pesar de la VPN.
 
-**[4]** Personalmente recomiendo usar la Herramienta con la Terminal en Pantalla Completa (Gráficamente más bonito).
+**[4]** Usar la herramienta con Firefox cerrado, esto se debe a que la herramienta abre múltiples pestañas y si Firefox ya está en ejecución se producir aun error.
+
+**[5]** Personalmente recomiendo usar la Herramienta con la Terminal en Pantalla Completa (Gráficamente más bonito).
 
 ## 🔎 Versiones 🔎
 
@@ -71,7 +73,7 @@ dichas APIs gratuitas para sacar el máximo partido a The_spy_job
 
 **(v1.2)** ---> Ampliación de Google Dorks en los Apartados 1, 2 y 6. 1=(Nueva búsqueda, filtra las URLs y fotos de toda la Web), en el Apartado 2 (Permite añadir una palabra clave a la búsqueda para hacerla más avanzada y específica) y por último en el Apartado 6 (También permite añadir una palabra clave a la búsqueda para hacerla más avanzada y específica), Reparación de error que afectaba a la penúltima Opción (Todas las opciones/Todo) de Todos los Apartados el cual cuando lanzaba un Navegador la Herramienta se paraba y no seguía hasta que cerrabas el Navegador.
 
-**(v1.3)** ---> Incorporación del famoso Motor de Búsqueda Zoomeye (API) en el Apartado [1] la Opción [3] y en el Apartado [7] la Opción [3], Nuevo Opción en el Apartado [8] llamada [3] Usar Buscador específico, el cual usa un Motor de Búsqueda específico de imágenes, Mejoras visuales.
+**(v1.3)** ---> Incorporación del famoso Motor de Búsqueda Zoomeye (API) en el Apartado [1] la Opción [3] y en el Apartado [7] la Opción [3], Nuevo Opción en el Apartado [8] llamada [3] Usar Buscador específico, el cual usa un Motor de Búsqueda específico de imágenes, Mejoras visuales, reparaciones varias.
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
