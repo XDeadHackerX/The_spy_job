@@ -11,7 +11,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -26,7 +26,7 @@ echo "                                [5] Informacion de un Email               
 echo "                                [6] Informacion de un Numero de Telefono   🔍"
 echo "                                [7] Informacion de una IP Publica          🔍"
 echo "                                [8] Informacion de una Imagen              🔍"
-echo "                                [9] --------------> Salir"" <--------------- 🔍"
+echo "                                [99] -------------> Salir"" <--------------- 🔍"
 echo
 read -p "[*] Elige una opcion: " opc1
 	case $opc1 in
@@ -48,7 +48,7 @@ read -p "[*] Elige una opcion: " opc1
 				;;
 			8 )	bash requisitos/8.sh
 				;;
-			9 )	exit
+			99 )	exit
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"

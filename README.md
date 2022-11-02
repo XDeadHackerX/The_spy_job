@@ -2,7 +2,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-[![The-Spy-s-Job-1-3.png](https://i.postimg.cc/Gh0Hg50r/The-Spy-s-Job-1-3.png)](https://postimg.cc/7bVHfXYQ)
+[![The-Spy-s-Job-2-0.png](https://i.postimg.cc/4y6b09z8/The-Spy-s-Job-2-0.png)](https://postimg.cc/8fC6JsXW)
 
 ---
 
@@ -22,13 +22,13 @@
 
 :ballot_box_with_check: **OSINT a Redes Sociales** --> [*Información de una Cuenta de Instagram/TikTok/Twitter/Twitch/(GitHub + email) = sin tener una cuenta*]
 
-:ballot_box_with_check: **OSINT a Emails** --> [*Verificar la existencia de un Email, Buscar en 121 Redes Sociales una cuenta con ese Email, Buscar Cuenta de GitHub enlazada al Email, Google Dorks*]
+:ballot_box_with_check: **OSINT a Emails** --> [*Información de un Email, Verificar la existencia de un Email, Buscar en 121 Redes Sociales una cuenta con ese Email, Buscar Cuenta de GitHub enlazada al Email, Google Dorks*]
 
 :ballot_box_with_check: **OSINT a Números de Teléfono** --> [*Compañía (ISP), Ver si está registrado en Instagram/Amazon/Snapchat, Google Dorks, Intentar extraer el Nombre del Dueño*]
 
 :ballot_box_with_check: **OSINT a IPs Públicas** --> [*Compañía (ISP), Geolocalización de la ciudad exacta, Buscar puertos abiertos con sus servicios/versión, Ping de la Web desde varios Países*]
 
-:ballot_box_with_check: **OSINT a Imágenes** --> [*Metadatos, Motor de Búsqueda de Google, Buscador específico de Imágenes*]
+:ballot_box_with_check: **OSINT a Imágenes** --> [*Metadatos, Motor de Búsqueda de Google, Buscador específico de Imágenes, Ampliar una imagen x5 sin casi perder calidad de la Imagen*]
 
 ## 🛠 Instalar Herramienta 🛠
 
@@ -74,6 +74,8 @@ dichas APIs gratuitas para sacar el máximo partido a The_spy_job
 **(v1.2)** ---> Ampliación de Google Dorks en los Apartados 1, 2 y 6. 1=(Nueva búsqueda, filtra las URLs y fotos de toda la Web), en el Apartado 2 (Permite añadir una palabra clave a la búsqueda para hacerla más avanzada y específica) y por último en el Apartado 6 (También permite añadir una palabra clave a la búsqueda para hacerla más avanzada y específica), Reparación de error que afectaba a la penúltima Opción (Todas las opciones/Todo) de Todos los Apartados el cual cuando lanzaba un Navegador la Herramienta se paraba y no seguía hasta que cerrabas el Navegador.
 
 **(v1.3)** ---> Incorporación del famoso Motor de Búsqueda Zoomeye (API) en el Apartado [1] la Opción [3] y en el Apartado [7] la Opción [3], Nuevo Opción en el Apartado [8] llamada [3] Usar Buscador específico, el cual usa un Motor de Búsqueda específico de imágenes, Mejoras visuales, Reparaciones varias.
+
+**(v2.0)** ---> Nueva Opción en el Apartado 5 llamado ([1] Información de un Email) este nos mostrará información muy interesante, Mejora en el Apartado 4 Opción ([2] Información de una cuenta de Instagram) ahora puedes ver la foto de perfil de una cuenta aunque sea privada, Mejoras en el apartado [4] Información de una Red Social, ahora aparte de abrir la web con información avanzada sobre esa cuenta te muestra el 90% de la información también por Terminal, te mostrara el Nombre (Si lo tiene), el número de Posts, número de publicaciones, seguidores y seguidos, y un link para descargar la Imagen de Perfil, también se a incorpororado la Red Social Telegram, Nueva opción en el Apartado 8 llamado [4] Ampliar una Imagen con calidad, logra ampliar la imagen x5 sin perder apenas calidad, Reparado error que había al abrir dos navegadores dentro de una opción, Mejora visual en el Apartado 6 la opción ([1] Ver la Compañía y el País del Número de Teléfono).
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
