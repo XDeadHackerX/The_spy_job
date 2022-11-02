@@ -12,7 +12,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -21,17 +21,19 @@ echo
 echo "[5] Informacion de un Email"
 echo
 echo "=========================================================="
-echo "[1] Buscar en 121 redes sociales una cuenta con ese Email""|"
+echo "[1] Informacion de un Email""                              |"
 echo "----------------------------------------------------------"
-echo "[2] Comprobar si tiene GitHub y saber su Username""        |"
+echo "[2] Buscar en 121 redes sociales una cuenta con ese Email""|"
 echo "----------------------------------------------------------"
-echo "[3] Usar Google Dorks (Ver donde se a publicado el Email)""|"
+echo "[3] Comprobar si tiene GitHub y saber su Username""        |"
 echo "----------------------------------------------------------"
-echo "[4] Verificar si el Email existe""                         |"
+echo "[4] Usar Google Dorks (Ver donde se a publicado el Email)""|"
 echo "----------------------------------------------------------"
-echo "[5] Todo (Verificar Email, 121 redes, Google Dorks)""      |"
+echo "[5] Verificar si el Email existe""                         |"
 echo "----------------------------------------------------------"
-echo "[6] Volver al Menu""                                       |"
+echo "[6] Todo (Info, Verificar Email, 121 redes, Google Dorks)""|"
+echo "----------------------------------------------------------"
+echo "[7] Volver al Menu""                                       |"
 echo "=========================================================="
 echo
 read -p "Elige una opcion: " opc1
@@ -43,9 +45,28 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] Email: $email"
 				echo "######################################"
 				echo
-				sudo holehe --only-used --no-clear $email
+				sudo curl -s emailrep.io/$email > requisitos/resultados/Info-$email.txt
+				cat requisitos/resultados/Info-$email.txt
+				echo
+				echo
+				echo "Si la Opcion (suspicious: true) aparece como (true) se debe a; Que no hemos observado esta dirección de correo electrónico en Internet, es un proveedor gratuito y no tiene perfiles en los principales servicios como LinkedIn, Facebook y iCloud. La falta de presencia digital puede indicar simplemente una nueva dirección de correo electrónico, pero suele ser sospechosa."
+				echo
+				echo "/\/\/\/\/\ A continuacion se va a abrir una Web en la cual le daremos a la lupa y rellenaremos la Captcha /\/\/\/\/"
+				echo
+				echo "Abriendo Navegador...."
+				sleep 3
+				su $user -c "firefox 'https://epieos.com/?q=$email'"
 				;;
 			2 )	echo
+				read -p "[*] Escribe el Correo Electronico del Objetivo [Gmail, Yahoo, Outlook]: " email
+				echo
+				echo "######################################"
+				echo "[☢] Email: $email"
+				echo "######################################"
+				echo
+				sudo holehe --only-used --no-clear $email
+				;;
+			3 )	echo
 				read -p "[*] Escribe el Correo Electronico del Objetivo [Gmail, Yahoo, Outlook]: " email
 				echo
 				echo "######################################"
@@ -57,7 +78,7 @@ read -p "Elige una opcion: " opc1
 				echo "En el caso de que nos haya devuelto un Username, dentro del Apartado [4] Informacion de una Red Social"
 				echo "tenemos la opcion [6] Informacion + email de una cuenta de GitHub la cual nos devolvera Info de la Cuenta"
 				;;
-			3 )	echo
+			4 )	echo
 				read -p "[*] Escribe el correo electronico del Objetivo [Gmail, Yahoo, Outlook]: " email
 				echo
 				echo "######################################"
@@ -68,15 +89,37 @@ read -p "Elige una opcion: " opc1
 				sleep 2
 				su $user -c "firefox 'https://www.google.com/search?q=%22$email%22'"
 				;;
-			4 )	echo
+			5 )	echo
 				echo "Escriba el Correo Electronico del objetivo a continuacion: "
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
 				su $user -c "firefox 'https://verify-email.org'"
 				;;
-			5 )	echo
+			6 )	echo
 				read -p "[*] Escribe el correo electronico del Objetivo [Gmail, Yahoo, Outlook]: " email
+				echo
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Informacion de un Email (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo
+				echo "######################################"
+				echo "[☢] Email: $email"
+				echo "######################################"
+				echo
+				sudo curl -s emailrep.io/$email requisitos/resultados/Info-$email.txt
+				cat requisitos/resultados/Info-$email.txt
+				echo
+				echo "Si la Opcion (suspicious: true) aparece como (true) se debe a; Que no hemos observado esta dirección de correo electrónico en Internet, es un proveedor gratuito y no tiene perfiles en los principales servicios como LinkedIn, Facebook y iCloud. La falta de presencia digital puede indicar simplemente una nueva dirección de correo electrónico, pero suele ser sospechosa."
+				echo
+				echo "/\/\/\/\/\ A continuacion se va a abrir una Web en la cual le daremos a la lupa y rellenaremos la Captcha /\/\/\/\/"
+				echo
+				echo "Abriendo Navegador...."
+				sleep 2
+				#su $user -c "firefox 'https://epieos.com/?q=$email'"
+				echo
+				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
+				echo
+				echo
+				echo
 				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Buscar en 121 redes sociales una cuenta con ese Email (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
@@ -129,11 +172,11 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador y Todas las Pestañas...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/search?q=%22$email%22'" | su $user -c "firefox 'https://verify-email.org'"
+				su $user -c "firefox 'https://epieos.com/?q=$email'" | su $user -c "firefox 'https://www.google.com/search?q=%22$email%22'" | su $user -c "firefox 'https://verify-email.org'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
-			6 )	bash the_spy_job.sh
+			7 )	bash the_spy_job.sh
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"

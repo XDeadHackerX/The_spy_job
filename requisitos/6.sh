@@ -13,7 +13,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -22,7 +22,7 @@ echo
 echo "[6] Informacion de un Numero de Telefono"
 echo
 echo "============================================================="
-echo "[1] Ver a que Compañia pertenece el Numero de Telefono""      |"
+echo "[1] Ver la Compañia y el Pais del Numero de Telefono""        |"
 echo "-------------------------------------------------------------"
 echo "[2] Ver si esta registrado en Instagram, Amazon o Snaptchat"" |"
 echo "-------------------------------------------------------------"
@@ -46,9 +46,9 @@ read -p "Elige una opcion: " opc1
 				echo "#############################"
 				echo
 				curl -s "https://api.veriphone.io/v2/verify?phone=%2B$codigo-$telefono&key=$api" > requisitos/resultados/$telefono.txt
-				echo "[*] Valido: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $3}'`
-				echo "[*] Pais: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $6}'`
-				echo "[*] Compañia: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $12}'`
+				echo "[*] Valido: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $3}' | cut -c 16-`
+				echo "[*] Pais: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $6}' | cut -c 12-`
+				echo "[*] Compañia: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $12}' | cut -c 12-`
 				;;
 			2 )	echo
 				read -p "[*] Escribe el Codigo del pais del Telefono del Objetivo (Ej: 34): " codigo
@@ -85,16 +85,16 @@ read -p "Elige una opcion: " opc1
 				read -p "[*] Escribe el Numero de Telefono del Objetivo (Ej: 62529541): " telefono
 				read -p "[*] Palabra clave /Opcional/ (Ej: Nombre, Email, Localizacion, etc): " info
 				echo
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Ver a que Compañia pertenece el Numero de Telefono (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Ver la Compañia y el Pais del Numero de Telefono (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "#############################"
 				echo "[☢] Telefono: +$codigo $telefono"
 				echo "#############################"
 				echo
 				curl -s "https://api.veriphone.io/v2/verify?phone=%2B$codigo-$telefono&key=$api" > requisitos/resultados/$telefono.txt
-				echo "[*] Valido: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $3}'`
-				echo "[*] Pais: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $6}'`
-				echo "[*] Compañia: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $12}'`
+				echo "[*] Valido: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $3}' | cut -c 16-`
+				echo "[*] Pais: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $6}' | cut -c 12-`
+				echo "[*] Compañia: " `cat requisitos/resultados/$telefono.txt | awk -F',' '{print $12}' | cut -c 12-`
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo

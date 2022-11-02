@@ -12,7 +12,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -27,9 +27,11 @@ echo "[2] Busqueda de la Imagen en Google""  |"
 echo "--------------------------------------"
 echo "[3] Usar Buscador especifico""         |"
 echo "--------------------------------------"
-echo "[4] Todo (Metadatos, Buscador Google)""|"
+echo "[4] Ampliar una Imagen con calidad x5""|"
 echo "--------------------------------------"
-echo "[5] Volver al Menu""                   |"
+echo "[5] Todo (Metadatos,Buscadores,Tools)""|"
+echo "--------------------------------------"
+echo "[6] Volver al Menu""                   |"
 echo "======================================"
 echo
 read -p "Elige una opcion: " opc1
@@ -60,6 +62,14 @@ read -p "Elige una opcion: " opc1
 				echo
 				;;
 			4 )	echo
+				echo "A continuacion cuando se abrira la Pagina Web, dale al boton (Drag or Drop), selecciona la Imagen y pulse (Start All)"
+				echo
+				echo "Abriendo Navegador...."
+				sleep 2
+				su $user -c "firefox 'https://imgupscaler.com/'"
+				echo
+				;;
+			5 )	echo
 				read -p "[*] Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " imagen
 				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Extrañendo Metadatos de la Imagen (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
@@ -85,11 +95,11 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador y Todas las Pestañas...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/imghp?hl=en&ogbl='" | su $user -c "firefox 'https://tineye.com'"
+				su $user -c "firefox 'https://www.google.com/imghp?hl=en&ogbl='" | su $user -c "firefox 'https://tineye.com'" | su $user -c "firefox 'https://imgupscaler.com/'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
-			5 )	bash the_spy_job.sh
+			6 )	bash the_spy_job.sh
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
