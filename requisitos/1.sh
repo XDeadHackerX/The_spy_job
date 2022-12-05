@@ -12,7 +12,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v2.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -231,7 +231,7 @@ read -p "Elige una opcion: " opc1
 				sudo echo $http://$dominio | hakrawler > requisitos/resultados/$dominio.txt
 				echo "Correos Electronicos: "
 				echo "_____________________"
-				sudo cat requisitos/resultados/$dominio.txt | grep mailto:
+				sudo cat requisitos/resultados/$dominio.txt | grep mailto: | cut -c 15-
 				echo
 				echo "Numeros de Telefono: "
 				echo "____________________"
@@ -301,7 +301,7 @@ read -p "Elige una opcion: " opc1
 				echo "                                               | |      __/ |   ★  ★   _/ |               "
 				echo "                                               |_|     |___/          |__/                "
 				echo "                              __________________________________________________"					
-				echo "                               ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
+				echo "                               ︻デ═一  Created by: XDeadHackerX v2.1  ︻デ═一 " 
 				echo "          -------------------------------------------------------------------------------------------"
 				echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 				echo "          -------------------------------------------------------------------------------------------" 
@@ -482,7 +482,7 @@ read -p "Elige una opcion: " opc1
 				sudo echo $http://$dominio | hakrawler > requisitos/resultados/$dominio.txt
 				echo "Correos Electronicos: "
 				echo "_____________________"
-				sudo cat requisitos/resultados/$dominio.txt | grep mailto:
+				sudo cat requisitos/resultados/$dominio.txt | grep mailto: | cut -c 15-
 				echo
 				echo "Numeros de Telefono: "
 				echo "____________________"

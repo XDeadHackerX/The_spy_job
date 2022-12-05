@@ -18,83 +18,93 @@ echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 �
 echo "          -------------------------------------------------------------------------------------------" 
 echo
 echo
-echo "[8] Informacion de Video/Canal de YouTube"
+echo "[9] Informacion de una Imagen"
 echo
 echo "======================================"
-echo "[1] Informacion de un Video / Canal""  |"
+echo "[1] Extraer Metadatos de la Imagen""   |"
 echo "--------------------------------------"
-echo "[2] Estadisticas de un Video / Canal"" |"
+echo "[2] Busqueda de la Imagen en Google""  |"
 echo "--------------------------------------"
-echo "[3] Todo (Informacion y Estadisticas)""|"
+echo "[3] Usar Buscador especifico""         |"
 echo "--------------------------------------"
-echo "[4] Volver al Menu""                   |"
+echo "[4] Ampliar una Imagen con calidad x4""|"
+echo "--------------------------------------"
+echo "[5] Todo (Metadatos,Buscadores,Tools)""|"
+echo "--------------------------------------"
+echo "[6] Volver al Menu""                   |"
 echo "======================================"
 echo
 read -p "Elige una opcion: " opc1
 	case $opc1 in
 			1 )	echo
-				read -p "[*] A continuacion pega el Link/URL del Video o Canal de YouTube: " link
+				read -p "[*] Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " imagen
 				echo
 				echo "################################################################"
-				echo "[☢] URL: $link"
+				echo "[☢] Imagen: $imagen"
 				echo "################################################################"
 				echo
-				echo "Abriendo Navegador...."
-                echo
-				sleep 2
-                su $user -c "firefox 'https://mattw.io/youtube-metadata/?url=$link&submit=true'"
-
+				sudo exiftool -v -s -G $imagen
 				;;
 			2 )	echo
-				read -p "[*] A continuacion pega el Link/URL del Video o Canal de YouTube: " link
-				echo
-				echo "################################################################"
-				echo "[☢] URL: $link"
-				echo "################################################################"
+				echo "A continuacion cuando se abrira la Pagina Web, deja caer la Imagen y empezara la busqueda"
 				echo
 				echo "Abriendo Navegador...."
-                echo
 				sleep 2
-                su $user -c "firefox 'https://mattw.io/youtube-metadata/bulk?url=$link&submit=true'"
+				su $user -c "firefox 'https://www.google.com/imghp?hl=en&ogbl='"
+				echo
 				;;
 			3 )	echo
-				read -p "[*] A continuacion pega el Link/URL del Video o Canal de YouTube: " link
+				echo "A continuacion cuando se abrira la Pagina Web, deja caer la Imagen y empezara la busqueda"
 				echo
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Extrañendo Informacion de un Video / Canal de YouTube (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
-				echo
-				echo "################################################################"
-				echo "[☢] URL: $link"
-				echo "################################################################"
-				echo
-				echo "Abriendo Navegador (Cuando se finalicen los procesos)...."
-                echo
+				echo "Abriendo Navegador...."
 				sleep 2
-                #su $user -c "firefox 'https://mattw.io/youtube-metadata/?url=$link&submit=true'"
+				su $user -c "firefox 'https://tineye.com'"
+				echo
+				;;
+			4 )	echo
+				echo "A continuacion cuando se abrira la Pagina Web, dale al boton (Drag or Drop), selecciona la Imagen y pulse (Start All)"
+				echo
+				echo "Abriendo Navegador...."
+				sleep 2
+				su $user -c "firefox 'https://imgupscaler.com/'"
+				echo
+				;;
+			5 )	echo
+				read -p "[*] Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " imagen
+				echo
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Extrañendo Metadatos de la Imagen (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo
+				echo "################################################################"
+				echo "[☢] Imagen: $imagen"
+				echo "################################################################"
+				echo
+				sudo exiftool -v -s -G $imagen
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
 				echo
 				echo
 				echo
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Generando Estadisticas de un Video / Canal de YouTube (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Buscar la Imagen a traves de Google para usar su red neuronal y usar un Buscador especifico (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
 				echo "################################################################"
-				echo "[☢] URL: $link"
+				echo "[☢] Imagen: $imagen"
 				echo "################################################################"
+				echo
+				echo "A continuacion cuando se abrira la Pagina Web, deja caer la Imagen y empezara la busqueda"
 				echo
 				echo "Abriendo Navegador y Todas las Pestañas...."
-                echo
 				sleep 2
-                su $user -c "firefox 'https://mattw.io/youtube-metadata/?url=$link&submit=true'" | su $user -c "firefox 'https://mattw.io/youtube-metadata/bulk?url=$link&submit=true'"
+				su $user -c "firefox 'https://www.google.com/imghp?hl=en&ogbl='" | su $user -c "firefox 'https://tineye.com'" | su $user -c "firefox 'https://imgupscaler.com/'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
-			4 )	bash the_spy_job.sh
+			6 )	bash the_spy_job.sh
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
 				sleep 1
-				bash requisitos/8.sh
+				bash requisitos/9.sh
 	esac
 echo
 echo
@@ -108,7 +118,7 @@ read -p "Elige una opcion: " opc2
 	case $opc2 in
 			1 )	bash the_spy_job.sh
 				;;
-			2 )	bash requisitos/8.sh
+			2 )	bash requisitos/9.sh
 				;;
 			3 )	exit
 				;;

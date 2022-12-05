@@ -11,7 +11,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v2.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -51,6 +51,7 @@ read -p "[*] Elige una opcion: " opc1
 				cd requisitos
 
 				sudo apt-get install curl -y
+				sudo apt-get install wget -y
 				sudo apt install git -y
 				sudo apt-get install python3 -y
 				sudo apt install python3.8 -y
