@@ -11,7 +11,7 @@ echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | 
 echo "                                               | |      __/ |   ★  ★   _/ |               "
 echo "                                               |_|     |___/          |__/                "
 echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
+echo "                               ︻デ═一  Created by: XDeadHackerX v2.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------" 
@@ -25,7 +25,8 @@ echo "                                [4] Informacion de una Red Social         
 echo "                                [5] Informacion de un Email                🔍"
 echo "                                [6] Informacion de un Numero de Telefono   🔍"
 echo "                                [7] Informacion de una IP Publica          🔍"
-echo "                                [8] Informacion de una Imagen              🔍"
+echo "                                [8] Informacion de Video/Canal de YouTube  🔍"
+echo "                                [9] Informacion de una Imagen              🔍"
 echo "                                [99] -------------> Salir"" <--------------- 🔍"
 echo
 read -p "[*] Elige una opcion: " opc1
@@ -47,6 +48,8 @@ read -p "[*] Elige una opcion: " opc1
 			7 )	bash requisitos/7.sh
 				;;
 			8 )	bash requisitos/8.sh
+				;;
+			9 )	bash requisitos/9.sh
 				;;
 			99 )	exit
 				;;

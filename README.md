@@ -2,7 +2,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-[![The-Spy-s-Job-2-0.png](https://i.postimg.cc/4y6b09z8/The-Spy-s-Job-2-0.png)](https://postimg.cc/8fC6JsXW)
+[![The-Spy-s-Job-2-1.png](https://i.postimg.cc/Xv2dY0Zt/The-Spy-s-Job-2-1.png)](https://postimg.cc/QBTHfwJq)
 
 ---
 
@@ -27,6 +27,8 @@
 :ballot_box_with_check: **OSINT a Números de Teléfono** --> [*Compañía (ISP), Ver si está registrado en Instagram/Amazon/Snapchat, Google Dorks, Intentar extraer el Nombre del Dueño*]
 
 :ballot_box_with_check: **OSINT a IPs Públicas** --> [*Compañía (ISP), Geolocalización de la ciudad exacta, Buscar puertos abiertos con sus servicios/versión, Ping de la Web desde varios Países*]
+
+:ballot_box_with_check: **OSINT a Videos/Canales YouTube** --> [**Videos:** *Fecha y Hora de la Publicación, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Estadísticas (visualizaciones, likes, comentarios y favoritos), Geolocalización (Si la puso), Status, Detalles del Video (Duración, dimensiones, definición, proyección), Categoría del video, Miniaturas.* **Canal:** *Fecha y Hora de la creación del Canal, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Localización (Si la tiene activada), Estadísticas (Visualizaciones totales de los videos, subscriptores, videos totales), Palabras claves (#), Playlists, Status, Categorías*]
 
 :ballot_box_with_check: **OSINT a Imágenes** --> [*Metadatos, Motor de Búsqueda de Google, Buscador específico de Imágenes, Ampliar una imagen x5 sin casi perder calidad de la Imagen*]
 
@@ -75,7 +77,9 @@ dichas APIs gratuitas para sacar el máximo partido a The_spy_job
 
 **(v1.3)** ---> Incorporación del famoso Motor de Búsqueda Zoomeye (API) en el Apartado [1] la Opción [3] y en el Apartado [7] la Opción [3], Nuevo Opción en el Apartado [8] llamada [3] Usar Buscador específico, el cual usa un Motor de Búsqueda específico de imágenes, Mejoras visuales, Reparaciones varias.
 
-**(v2.0)** ---> Nueva Opción en el Apartado 5 llamado ([1] Información de un Email) este nos mostrará información muy interesante, Mejora en el Apartado 4 Opción ([2] Información de una cuenta de Instagram) ahora puedes ver la foto de perfil de una cuenta aunque sea privada, Mejoras en el apartado [4] Información de una Red Social, ahora aparte de abrir la web con información avanzada sobre esa cuenta te muestra el 90% de la información también por Terminal, te mostrara el Nombre (Si lo tiene), el número de Posts, número de publicaciones, seguidores y seguidos, y un link para descargar la Imagen de Perfil, también se a incorpororado la Red Social Telegram, Nueva opción en el Apartado 8 llamado [4] Ampliar una Imagen con calidad, logra ampliar la imagen x5 sin perder apenas calidad, Reparado error que había al abrir dos navegadores dentro de una opción, Mejora visual en el Apartado 6 la opción ([1] Ver la Compañía y el País del Número de Teléfono).
+**(v2.0)** ---> Nueva Opción en el Apartado 5 llamado ([1] Información de un Email) este nos mostrará información muy interesante, Mejora en el Apartado 4 Opción ([2] Información de una cuenta de Instagram) ahora puedes ver la foto de perfil de una cuenta aunque sea privada, Mejoras en el apartado [4] Información de una Red Social, ahora aparte de abrir la web con información avanzada sobre esa cuenta te muestra el 95% de la información también por Terminal, te mostrara el Nombre (Si lo tiene), el número de Posts, número de publicaciones, seguidores y seguidos, y un link para descargar la Imagen de Perfil, también se a incorpororado la Red Social Telegram, Nueva opción en el Apartado 8 llamado [4] Ampliar una Imagen con calidad, logra ampliar la imagen x4 sin perder apenas calidad, Reparado error que había al abrir dos navegadores dentro de una opción, Mejora visual en el Apartado 6 la opción ([1] Ver la Compañía y el País del Número de Teléfono).
+
+**(v2.1)** ---> Nuevo Apartado llamado ([8] Información de un Video/Canal de YouTube) este nuevo apartado es capaz de extraer mucha información interesante de un Video o Canal de YouTube, como puede ser (**Videos:** *Fecha y Hora de la Publicación, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Estadísticas (visualizaciones, likes, comentarios y favoritos), Geolocalización (Si la puso), Status, Detalles del Video (Duración, dimensiones, definición, proyección), Categoría del video, Miniaturas.* **Canal:** *Fecha y Hora de la creación del Canal, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Localización (Si la tiene activada), Estadísticas (Visualizaciones totales de los videos, subscriptores, videos totales), Palabras claves (#), Playlists, Status, Categorías*), dentro de este apartado también te da la posibilidad de Generar Estadísticas de un Video o un Canal. La mejor parte de este nuevo apartado es que no requiere de una API de YouTube, la parte negativa es que todos estos resultados se tiene que visualizar en un navegador y no por Terminal, a pesar de esto seguiré estudiando la forma de mostrar los resultados por Terminal al igual que en el Apartado 4. En el apartado 4 ahora tambien extrae informacion de las cuentas privadas de Instagram y Twitter, convirtiendose en la primera herramienta gratuita en GitHub en poder extraer esta informacion sin necesidad de API ni cuenta. Limpieza en los resultados de los Apartados 1, 4, 6, se eliminan los caracteres especiales que rodeaban los resultados de dichos apartados.
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
