@@ -1,5 +1,7 @@
 # 🔍 The spy's job 🔍
 
+[Español](https://github.com/XDeadHackerX/The_spy_job) | [English](https://github.com/SobrioRiot/The_spy_job)
+
 > Herramienta creada por XDeadHackerX
 
 [![The-Spy-s-Job-2-1.png](https://i.postimg.cc/Xv2dY0Zt/The-Spy-s-Job-2-1.png)](https://postimg.cc/QBTHfwJq)
