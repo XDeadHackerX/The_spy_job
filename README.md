@@ -15,7 +15,7 @@
 
 ---
 
-## 💡 Funciones 💡 <img width="85px" alt="GitHub watchers" src="https://visitor-badge.glitch.me/badge?page_id=NetSoc_OSINT&left_color=gray&right_color=blue"/>
+## 💡 Funciones 💡 <img width="83px" alt="Version" src="https://img.shields.io/badge/version-1.1-blue.svg?style=flat"/>
 
 :ballot_box_with_check: **OSINT a Páginas Webs** --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Información del Servidor, Intentar Extraer IP real de Servidor con CloudFlare, Encriptado SSL, Listar Todas las URLs de un Dominio, Información Web de WordPress, Extraer Trabajadores, Correos Electrónicos y Números de Teléfono, Listar Dominios, Google Dorks, Ping a una Web desde varios Países*]
 
