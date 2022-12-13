@@ -2,8 +2,8 @@
 
 [Español](https://github.com/XDeadHackerX/The_spy_job) | [English](https://github.com/SobrioRiot/The_spy_job)
 
-> Herramienta creada por XDeadHackerX <img width="90px" align="right" alt="Version" src="https://img.shields.io/badge/version-2.1-blue.svg?style=for-the-badge"/>
-
+> Herramienta creada por XDeadHackerX
+<img width="80px" align="center" alt="Version" src="https://img.shields.io/badge/version-2.1-blue.svg?style=for-the-badge"/>
 [![The-Spy-s-Job-2-1.png](https://i.postimg.cc/Xv2dY0Zt/The-Spy-s-Job-2-1.png)](https://postimg.cc/QBTHfwJq)
 
 ---
