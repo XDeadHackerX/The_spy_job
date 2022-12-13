@@ -15,7 +15,7 @@
 
 ---
 
-## 💡 Funciones 💡
+## 💡 Funciones 💡 <img width="85px" alt="GitHub watchers" src="https://visitor-badge.glitch.me/badge?page_id=NetSoc_OSINT&left_color=gray&right_color=blue"/>
 
 :ballot_box_with_check: **OSINT a Páginas Webs** --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Información del Servidor, Intentar Extraer IP real de Servidor con CloudFlare, Encriptado SSL, Listar Todas las URLs de un Dominio, Información Web de WordPress, Extraer Trabajadores, Correos Electrónicos y Números de Teléfono, Listar Dominios, Google Dorks, Ping a una Web desde varios Países*]
 
@@ -33,7 +33,7 @@
 
 :ballot_box_with_check: **OSINT a Videos/Canales YouTube** --> [**Videos:** *Fecha y Hora de la Publicación, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Estadísticas (visualizaciones, likes, comentarios y favoritos), Geolocalización (Si la puso), Status, Detalles del Video (Duración, dimensiones, definición, proyección), Categoría del video, Miniaturas.* **Canal:** *Fecha y Hora de la creación del Canal, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Localización (Si la tiene activada), Estadísticas (Visualizaciones totales de los videos, subscriptores, videos totales), Palabras claves (#), Playlists, Status, Categorías*]
 
-:ballot_box_with_check: **OSINT a Imágenes** --> [*Metadatos, Motor de Búsqueda de Google, Buscador específico de Imágenes, Ampliar una imagen x5 sin casi perder calidad de la Imagen*]
+:ballot_box_with_check: **OSINT a Imágenes** --> [*Metadatos, Motor de Búsqueda de Google, Buscador específico de Imágenes, Ampliar una imagen x4 sin casi perder calidad de la Imagen*]
 
 ## 🛠 Instalar Herramienta 🛠
 
