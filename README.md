@@ -2,7 +2,7 @@
 
 [Español](https://github.com/XDeadHackerX/The_spy_job) | [English](https://github.com/SobrioRiot/The_spy_job)
 
-> Herramienta creada por XDeadHackerX
+> Herramienta creada por XDeadHackerX  <p align="right"> <img width="83px" alt="Version" src="https://img.shields.io/badge/version-2.1-blue.svg?style=for-the-badge"/></p>
 
 [![The-Spy-s-Job-2-1.png](https://i.postimg.cc/Xv2dY0Zt/The-Spy-s-Job-2-1.png)](https://postimg.cc/QBTHfwJq)
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 💡 Funciones 💡 <img width="83px" alt="Version" src="https://img.shields.io/badge/version-1.1-blue.svg?style=flat"/>
+## 💡 Funciones 💡
 
 :ballot_box_with_check: **OSINT a Páginas Webs** --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Información del Servidor, Intentar Extraer IP real de Servidor con CloudFlare, Encriptado SSL, Listar Todas las URLs de un Dominio, Información Web de WordPress, Extraer Trabajadores, Correos Electrónicos y Números de Teléfono, Listar Dominios, Google Dorks, Ping a una Web desde varios Países*]
 
