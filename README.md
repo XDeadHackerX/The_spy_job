@@ -4,7 +4,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-<p align="center"><img width="95px" alt="Version" src="https://img.shields.io/badge/version-2.1-blue.svg?style=for-the-badge"/></p>
+<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-2.1-blue.svg?style=for-the-badge"/></p>
 
 [![The-Spy-s-Job-2-1.png](https://i.postimg.cc/Xv2dY0Zt/The-Spy-s-Job-2-1.png)](https://postimg.cc/QBTHfwJq)
 
