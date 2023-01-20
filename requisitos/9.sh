@@ -43,7 +43,13 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] Imagen: $imagen"
 				echo "################################################################"
 				echo
-				sudo exiftool -v -s -G $imagen
+				primera=`echo $imagen | head -c 1`
+				coma="'"
+				if [ $primera = $coma ]
+					then
+						fich1=`echo $imagen | cut -c 2- | rev | cut -c2- | rev`
+				fi
+				sudo exiftool -v -s -G $fich1
 				;;
 			2 )	echo
 				echo "A continuacion cuando se abrira la Pagina Web, deja caer la Imagen y empezara la busqueda"
@@ -78,7 +84,13 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] Imagen: $imagen"
 				echo "################################################################"
 				echo
-				sudo exiftool -v -s -G $imagen
+				primera=`echo $imagen | head -c 1`
+				coma="'"
+				if [ $primera = $coma ]
+					then
+						fich1=`echo $imagen | cut -c 2- | rev | cut -c2- | rev`
+				fi
+				sudo exiftool -v -s -G $fich1
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
