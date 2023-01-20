@@ -92,4 +92,4 @@ dichas APIs gratuitas para sacar el máximo partido a The_spy_job
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/XDeadHackerX)
 
-Copyright © 2022, XDeadHackerX
+Copyright © 2023, XDeadHackerX
