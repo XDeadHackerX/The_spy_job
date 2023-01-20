@@ -115,7 +115,7 @@ read -p "Elige una opcion: " opc1
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
-				sleep 1
+				sleep 2
 				bash requisitos/9.sh
 	esac
 echo
