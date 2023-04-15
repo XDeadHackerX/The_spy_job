@@ -71,7 +71,7 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: @$username"
 				echo "#################################"
 				echo
-				wget --wait=40 --limit-rate=40K -U Mozilla -bq https://www.pixwox.com/profile/$username/ -O requisitos/resultados/Ig-$username.txt >/dev/null
+				wget --wait=40 --limit-rate=40K -U Mozilla -bq https://www.picnob.com/profile/$username/ -O requisitos/resultados/Ig-$username.txt >/dev/null
 				sleep 6
 				echo "[*] Usuario: @$username"
 				echo "[*] Nombre: " `cat requisitos/resultados/Ig-$username.txt | awk -F= '/"fullname">/ {print $2}' | cut -c 12- | rev | cut -c6- | rev`
@@ -88,7 +88,7 @@ read -p "Elige una opcion: " opc1
 				echo "Abriendo Navegador...."
 				echo
 				sleep 2
-				su $user -c "firefox 'https://www.picuki.com/profile/$username'" | su $user -c "firefox 'https://www.pixwox.com/search/?q=$username'"
+				su $user -c "firefox 'https://www.picuki.com/profile/$username'" | su $user -c "firefox 'https://www.picnob.com/search/?q=$username'"
 				;;
 			3 )	echo
 				read -p "[*] Escribe el nombre de usuario del Objetivo (Ej: anonymous23): " username
@@ -219,7 +219,7 @@ read -p "Elige una opcion: " opc1
 				echo "[☢] UserName: $username"
 				echo "#################################"
 				echo
-				wget --wait=40 --limit-rate=40K -U Mozilla -bq https://www.pixwox.com/profile/$username/ -O requisitos/resultados/Ig-$username.txt >/dev/null
+				wget --wait=40 --limit-rate=40K -U Mozilla -bq https://www.picnob.com/profile/$username/ -O requisitos/resultados/Ig-$username.txt >/dev/null
 				sleep 6
 				echo "[*] Usuario: @$username"
 				echo "[*] Nombre: " `cat requisitos/resultados/Ig-$username.txt | awk -F= '/"fullname">/ {print $2}' | cut -c 12- | rev | cut -c6- | rev`
@@ -234,7 +234,7 @@ read -p "Elige una opcion: " opc1
 				echo "[*] URL Perfil: https://www.instagram.com/$username"
 				echo
 				sleep 2
-				#su $user -c "firefox 'https://www.picuki.com/profile/$username'" | su $user -c "firefox 'https://www.pixwox.com/search/?q=$username'"
+				#su $user -c "firefox 'https://www.picuki.com/profile/$username'" | su $user -c "firefox 'https://www.picnob.com/search/?q=$username'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				echo
@@ -336,7 +336,7 @@ read -p "Elige una opcion: " opc1
 				echo "[*] URL Perfil: https://t.me/$username"
 				echo
 				echo "Abriendo Navegador y Todas las Pestañas...."
-				su $user -c "firefox 'https://github.com/$username'" | su $user -c "firefox 'https://www.picuki.com/profile/$username'" | su $user -c "firefox 'https://www.pixwox.com/search/?q=$username'" | su $user -c "firefox 'https://urlebird.com/es/user/$username/'" | su $user -c "firefox 'https://www.tiktok.com/@$username'" | su $user -c "firefox 'https://nitter.net/$username'" | su $user -c "firefox 'https://www.twitch.tv/$username'" | su $user -c "firefox 'https://t.me/$username'"
+				su $user -c "firefox 'https://github.com/$username'" | su $user -c "firefox 'https://www.picuki.com/profile/$username'" | su $user -c "firefox 'https://www.picnob.com/search/?q=$username'" | su $user -c "firefox 'https://urlebird.com/es/user/$username/'" | su $user -c "firefox 'https://www.tiktok.com/@$username'" | su $user -c "firefox 'https://nitter.net/$username'" | su $user -c "firefox 'https://www.twitch.tv/$username'" | su $user -c "firefox 'https://t.me/$username'"
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
