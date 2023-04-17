@@ -1,22 +1,8 @@
 #!/bin/bash
 
-clear
-echo            
-echo "                     _____  _                                 _          _         _      "
-echo "                    |_   _|| |      ◤✞ тнє ѕρу'ѕ נσв ✞◥      ( )        (_)       | |     "
-echo "                      | |  | |__    ___    ___  _ __   _   _ |/  ___     _   ___  | |__   "
-echo "                      | |  | '_ \  / _ \  / __|| '_ \ | | | |   / __|   | | / _ \ | '_ \  "
-echo "                      | |  | | | ||  __/  \__ \| |_) || |_| |   \__ \   | || (_) || |_) | "
-echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | | \___/ |_.__/  "
-echo "                                               | |      __/ |   ★  ★   _/ |               "
-echo "                                               |_|     |___/          |__/                "
-echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v2.1  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------" 
-echo
-echo
+source requisitos/0.sh
+
+Title
 echo "                                [0] ==>Instalar y Configurar Requisitos<== 🔍"
 echo "                                [1] Informacion de una Pagina Web/Empresa  🔍"
 echo "                                [2] Informacion de una Persona             🔍"
