@@ -1,23 +1,9 @@
 #!/bin/bash
 user=`cat requisitos/configuracion/.user_not_root.txt`
 
-clear
-echo            
-echo "                     _____  _                                 _          _         _      "
-echo "                    |_   _|| |      ◤✞ тнє ѕρу'ѕ נσв ✞◥      ( )        (_)       | |     "
-echo "                      | |  | |__    ___    ___  _ __   _   _ |/  ___     _   ___  | |__   "
-echo "                      | |  | '_ \  / _ \  / __|| '_ \ | | | |   / __|   | | / _ \ | '_ \  "
-echo "                      | |  | | | ||  __/  \__ \| |_) || |_| |   \__ \   | || (_) || |_) | "
-echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | | \___/ |_.__/  "
-echo "                                               | |      __/ |   ★  ★   _/ |               "
-echo "                                               |_|     |___/          |__/                "
-echo "                              __________________________________________________"					
-echo "                               ︻デ═一  Created by: XDeadHackerX v2.1  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------" 
-echo
-echo
+source requisitos/0.sh
+
+Title
 echo "[7] Informacion de una IP Publica"
 echo
 echo "=========================================================="
@@ -143,23 +129,7 @@ read -p "Elige una opcion: " opc1
 				sleep 2
 				su $user -c "firefox 'https://check-host.net/check-ping?host=$ip'"
 				;;
-			5 )	clear
-				echo            
-				echo "                     _____  _                                 _          _         _      "
-				echo "                    |_   _|| |      ◤✞ тнє ѕρу'ѕ נσв ✞◥      ( )        (_)       | |     "
-				echo "                      | |  | |__    ___    ___  _ __   _   _ |/  ___     _   ___  | |__   "
-				echo "                      | |  | '_ \  / _ \  / __|| '_ \ | | | |   / __|   | | / _ \ | '_ \  "
-				echo "                      | |  | | | ||  __/  \__ \| |_) || |_| |   \__ \   | || (_) || |_) | "
-				echo "                      \_/  |_| |_| \___|  |___/| .__/  \__, |   |___/   | | \___/ |_.__/  "
-				echo "                                               | |      __/ |   ★  ★   _/ |               "
-				echo "                                               |_|     |___/          |__/                "
-				echo "                              __________________________________________________"					
-				echo "                               ︻デ═一  Created by: XDeadHackerX v2.1  ︻デ═一 " 
-				echo "          -------------------------------------------------------------------------------------------"
-				echo "          Cualquier acción y o actividad relacionada con 𝔗𝔥𝔢 𝔰𝔭𝔶'𝔰 𝔧𝔬𝔟 es únicamente su responsabilidad"
-				echo "          -------------------------------------------------------------------------------------------" 
-				echo
-				echo
+			5 )	Title
 				echo "[7] Informacion de una IP Publica"
 				echo
 				read -p "Escribe la IP Publica del Objetivo: " ip
