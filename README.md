@@ -55,7 +55,7 @@
 
 **7)** Marcamos la Opción 0 y luego 1 para instalar las dependencias (Solo marcar la primera vez)
 
-**8)** Dentro de la Opción 0 nos encontramos con los apartados 2 y 3 los cuales podemos configurar 
+**8)** Dentro de la Opción 0 nos encontramos con los apartados 2 y 3 en los cuales podemos configurar 
 dichas APIs gratuitas para sacar el máximo partido a The_spy_job
 
 **9)** Ya podemos disfrutar de la herramienta
